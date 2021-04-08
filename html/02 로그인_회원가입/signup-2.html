@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="내가 찾던 미래 교육. 매직에콜에 오신 것을 환영합니다.">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>회원가입 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.auth.css">
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+</head>
+
+<body class="d-flex flex-column">
+    <div class="content content-auth">
+        <div class="d-flex justify-content-center">
+            <div class="sign-wrapper">
+                <div class="wd-100p">
+                    <div class="text-center">
+                        <a href="index.html">
+                            <img src="/assets/img/logo_L.png" class="mg-logo" ondragstart="return false">
+                        </a>
+                        <p class="mge-subt tx-lg-18">계정 정보를 입력해주세요.🧑‍💻</p>
+                    </div>
+                    <form class="needs-validation mg-b-0 tx-left" data-parsley-validate novalidate>
+                        <div class="mg-b-10">
+                            <label class="tx-semibold tx-12 mg-b-2">이메일</label>
+                            <input type="email" class="form-control"  placeholder="이메일 주소 입력" required>
+                            <span class="invalid-feedback">필수 입력사항입니다.</span>
+                        </div>
+                        <div class="mg-b-10">
+                            <label class="tx-semibold tx-12 mg-b-2">비밀번호</label>
+                            <input type="password" class="form-control" placeholder="영문, 숫자, 특수문자 조합하여 8~16자" required>
+                            <span class="invalid-feedback">필수 입력사항입니다.</span>
+                        </div>
+                        <div class="mg-b-10">
+                            <label class="tx-semibold tx-12 mg-b-2">비밀번호 확인</label>
+                            <input type="password" class="form-control" placeholder="비밀번호 재입력" required>
+                            <span class="invalid-feedback">필수 입력사항입니다.</span>
+                        </div>
+                        <div class="mg-b-10">
+                            <label class="tx-semibold tx-12 mg-b-2">이름</label>
+                            <input type="text" class="form-control" placeholder="이름을 입력해 주세요" required>
+                            <span class="invalid-feedback">필수 입력사항입니다.</span>
+                        </div>
+                        <div class="mg-b-10">
+                            <label class="tx-semibold tx-12 mg-b-2">휴대전화<span class="tx-medium tx-10 tx-color-03">&nbsp;(번호만 입력)</span></label>
+                            <input type="text" class="form-control" placeholder="전화번호를 입력해주세요" required>
+                            <span class="invalid-feedback">필수 입력사항입니다.</span>
+                        </div>
+                        <div class="mg-b-10">
+                            <label class="tx-semibold tx-12 mg-b-2">학번</label>
+                            <input type="text" class="form-control" placeholder="학번을 입력해 주세요" required>
+                            <span class="invalid-feedback">필수 입력사항입니다.</span>
+                        </div>
+                        <div class="mg-b-10">
+                            <label class="tx-semibold tx-12 mg-b-2">학과</label>
+                            <input type="text" class="form-control" placeholder="학과를 입력해 주세요" required>
+                            <span class="invalid-feedback">필수 입력사항입니다.</span>
+                        </div>
+                        <div class="mg-b-10">
+                            <label class="tx-semibold tx-12 mg-b-2">복수/ 부전공 학과<span class="tx-medium tx-10 tx-color-03">&nbsp;(선택사항)</span></label>
+                            <input type="text" class="form-control" placeholder="복수/ 부전공 학과를 입력해 주세요" required>
+                            <span class="invalid-feedback">필수 입력사항입니다.</span>
+                        </div>
+                        <div class="">
+                            <label class="tx-semibold tx-12 mg-b-2">생년월일</label>
+                            <div class="row row-xs mg-b-20">
+                                <div class="parsley-select col-4">
+                                    <select class="custom-select" required>
+                                        <option value="" selected>연도</option>
+                                        <option value="1">2020</option>
+                                        <option value="2">2019</option>
+                                        <option value="3">2018</option>
+                                        <option value="4">2017</option>
+                                        <option value="5">2016</option>
+                                    </select>
+                                    <span class="invalid-feedback">연도를 입력해주세요.</span>
+                                </div>
+                                <div class="parsley-select col-4">
+                                    <select class="custom-select" required>
+                                        <option value="" selected>월</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <span class="invalid-feedback">월을 입력해주세요.</span>
+                                </div>
+                                <div class="parsley-select col-4">
+                                    <select class="custom-select" required>
+                                        <option value="" selected>월</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <span class="invalid-feedback">일을 입력해주세요.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block tx-bold" type="submit" onclick = "location.href = '#' " data-toggle="modal" data-target="#Modal_1">가입하기</button>
+                    </form>
+                    <hr>
+                    <p class="subt mg-t-30 tx-center">이미 계정이 있으신가요?<a href="">&nbsp;로그인하기</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="row justify-content-center">
+            <div class="d-flex col-10 col-xl-8">
+                <div class="col-3">
+                    <img src="/assets/img/logo_db_w.png" class="mg-b-10" ondragstart="return false">
+                    <p class="tx-bold mg-r-15" style="color: #999999;">매직에꼴은 뉴노멀 시대에 맞는 온ㆍ오프라인 블렌디드 러닝 시스템입니다.</p>                
+                </div>
+                <div class="col-9">
+                    <div class="d-flex  mg-b-25">
+                        <nav class="nav">
+                            <a class="nav-link" href="">서비스 이용약관</a>
+                            <a class="nav-link" href="">개인정보 처리방침</a>
+                            <a class="nav-link">대표전화. 02.6223.9167</a>
+                        </nav>
+                    </div>               
+                    <div class="tx-12" style="color: #999999;">
+                        <p class="mg-b-20">사업자 등록번호 : 220-88-44288&ensp;|&ensp;통신판매신고 번호 : 제2015-서울성동-0786호&ensp;|&ensp;대표자 : 최재규&ensp;|&ensp;<a href="" style="color: #999999;">사업자정보확인</a><br>상호 : (주)매직에코&ensp;|&ensp;본사 : 서울 성동구 성수일로 10길 26 (성수동2가) 하우스디세종타워 1505호<br>대표메일 : edu@magice.co&ensp;|&ensp;대표전화 : 02-6223-9167&ensp;|&ensp;Fax : 02-6455-9167</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center" style="color: #999999;">
+                        <div>
+                            <p class="mg-b-0">© 2020 magicecole All Rights Reserved. Powered by <a href="http://magice.co">magic eco</a></p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-xs btn-primary"><i data-feather="chevron-up" class="wd-12 mg-r-5"></i>맨위로</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </footer>
+
+    <script>
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          var forms = document.getElementsByClassName('needs-validation');
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+  </body>
+</html>

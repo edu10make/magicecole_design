@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>미션 관리 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
+</head>
+
+<body class="d-flex flex-column">
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="index.html"><img src="/assets/img/logo_ia.png" class="aside-logo" ondragstart="return false"></a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="aside-loggedin-user">
+                    <h6 class="tx-semibold mg-b-0">[42SEOUL] 빅데이터 분석</h6>
+                    <p class="tx-color-03 tx-12 btn-uppercase mg-b-0">강의 코드&nbsp;<span class="tx-color-03 tx-bold">42SEOUL</span></p>
+                </div>
+            </div><!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-label">멘토 메뉴</li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지사항</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="flag"></i><span>프로젝트</span></a></li>
+                <li class="nav-item active"><a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션 관리</span></a></li>
+                <li class="nav-item with-sub">
+                    <a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>레포트</span></a>
+                    <ul>
+                        <li><a href="">전체 레포트</a></li>
+                        <li><a href="">개인별 레포트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+        <header class="navbar navbar-header">
+            <div class="navbar-right">
+                <div class="dropdown dropdown-profile">
+                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                        <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex" style="color: #001737;">
+                            <i data-feather="user" class="wd-16 ht-16"></i>
+                        </div>
+                    </a><!-- dropdown-link -->
+                    <div class="dropdown-menu dropdown-menu-right tx-13">
+                        <div>
+                            <div class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
+                                <i data-feather="user" class="wd-32 ht-32"></i>
+                            </div>
+                            <h6 class="profile-tx tx-lg-16">한기헌</h6>
+                            <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                        <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
+                        <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
+                        <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </div><!-- navbar-right -->
+        </header><!-- content-header -->
+
+        <div class="content-body" style="background-color: #f4f5f8;">
+            <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+                <div class="row row-xs d-flex justify-content-between">
+                    <div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                <li class="breadcrumb-item"><a href="#">[42SEOUL] 빅데이터 분석</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">미션 관리</li>
+                            </ol>
+                        </nav>
+                        <h2 class="df-title">미션 관리</h2>
+                        <p class="df-lead">수강생의 미션을 관리합니다.</p>
+                    </div>
+                    <div class="d-d-none d-md-block">
+                        <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
+                    </div>
+                </div>
+                <div class="row row-xs d-flex mg-t-15 mg-b-10">
+                    <div class="col-6 col-sm-3 col-lg-2 offset-lg-8 mg-t-10 mg-sm-t-0">
+                        <select class="custom-select" aria-label="">
+                            <option value="1" selected>미션 전체</option>
+                            <option value="2" >미션별</option>
+                            <option value="3">학생별</option>
+                        </select>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 mg-t-10 mg-sm-t-0">
+                        <a href="" class="btn btn-block btn-primary tx-14">확인</a>
+                    </div>
+                </div>
+                <div class="row row-xs">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body pd-25">
+                                <div class="d-flex justify-content-between mg-b-20">
+                                    <h6 class="tx-bold"><span class="badge badge-ch tx-bold">MISSION 01</span>&ensp;미터기 텍스트</h6>
+                                    <p class="reply-time">마감일&nbsp;:&nbsp;<span>2021-03-11 까지</span></p>
+                                </div>
+                                <h6 class="tx-12 tx-bold tx-color-03 mg-b-4">제출 인원&ensp;<span>30/40</span></h6>
+                                <div class="progress ht-10">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success wd-70p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6 class="tx-12 tx-bold tx-color-03 mg-t-16 mg-b-4">평가 인원&ensp;<span>20/40</span></h6>
+                                <div class="progress ht-10">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated wd-50p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mg-t-10">
+                            <div class="card-body pd-25">
+                                <div class="d-flex justify-content-between mg-b-20">
+                                    <h6 class="tx-bold"><span class="badge badge-ch tx-bold">MISSION 02</span>&ensp;문자 분석</h6>
+                                    <p class="reply-time">마감일&nbsp;:&nbsp;<span>2021-03-15 까지</span></p>
+                                </div>
+                                <h6 class="tx-12 tx-bold tx-color-03 mg-b-4">제출 인원&ensp;<span>20/40</span></h6>
+                                <div class="progress ht-10">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success wd-50p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6 class="tx-12 tx-bold tx-color-03 mg-t-16 mg-b-4">평가 인원&ensp;<span>10/40</span></h6>
+                                <div class="progress ht-10">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated wd-25p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mg-t-10">
+                            <div class="card-body pd-25">
+                                <div class="d-flex justify-content-between mg-b-20">
+                                    <h6 class="tx-bold"><span class="badge badge-ch tx-bold">MISSION 03</span>&ensp;알고리즘</h6>
+                                    <p class="reply-time">마감일&nbsp;:&nbsp;<span>2021-03-20 까지</span></p>
+                                </div>
+                                <h6 class="tx-12 tx-bold tx-color-03 mg-b-4">제출 인원&ensp;<span>10/40</span></h6>
+                                <div class="progress ht-10">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success wd-25p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6 class="tx-12 tx-bold tx-color-03 mg-t-16 mg-b-4">평가 인원&ensp;<span>0/40</span></h6>
+                                <div class="progress ht-10">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated wd-0p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mg-t-10">
+                            <div class="card-body pd-25">
+                                <div class="d-flex justify-content-between mg-b-20">
+                                    <h6 class="tx-bold tx-color-03"><span class="badge badge-lock tx-bold">MISSION 04</span>&ensp;모델 개발</h6>
+                                    <p class="reply-time">마감일&nbsp;:&nbsp;<span>-</span></p>
+                                </div>
+                                <h6 class="tx-12 tx-bold tx-color-03 mg-b-4">제출 인원&ensp;<span>0/40</span></h6>
+                                <div class="progress ht-10">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6 class="tx-12 tx-bold tx-color-03 mg-t-16 mg-b-4">평가 인원&ensp;<span>0/40</span></h6>
+                                <div class="progress ht-10">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated wd-0p" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="/lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="/lib/peity/jquery.peity.min.js"></script>
+    <script src="/lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+    <script src="/assets/js/dashforge.aside.js"></script>
+    <script src="/assets/js/dashforge.sampledata.js"></script>
+    <script src="/assets/js/dashboard-two.js"></script>
+    <script src="/assets/js/dashboard-four.js"></script>
+
+    <script src="/lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="/lib/moment/min/moment.min.js"></script>
+    <script src="/lib/fullcalendar/fullcalendar.min.js"></script>
+    <script src="/lib/select2/js/select2.full.min.js"></script>
+
+    <script src="/assets/js/calendar-events.js"></script>
+    <script src="/assets/js/dashforge.calendar.js"></script>
+
+</body>
+</html>

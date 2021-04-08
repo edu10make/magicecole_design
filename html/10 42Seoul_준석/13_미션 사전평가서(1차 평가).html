@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>사전 평가서 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
+</head>
+
+<body class="d-flex flex-column">
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="index.html"><img src="/assets/img/logo_ia.png" class="aside-logo" ondragstart="return false"></a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="aside-loggedin-user">
+                    <h6 class="tx-semibold mg-b-0">[42SEOUL] 의료 데이터</h6>
+                    <p class="tx-color-03 tx-12 btn-uppercase mg-b-0">강의 코드&nbsp;<span class="tx-color-03 tx-bold">42SEOUL</span></p>
+                </div>
+            </div><!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-label">학습 메뉴</li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지사항</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="flag"></i><span>프로젝트</span></a></li>
+                <li class="nav-item with-sub show">
+                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션평가</span></a>
+                    <ul>
+                        <li><a href="">내 미션 평가요청</a></li>
+                        <li><a href="">내 미션 평가결과</a></li>
+                        <li class="active"><a href="">내 동료 평가하기</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>결과</span></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+        <header class="navbar navbar-header">
+            <div class="navbar-right">
+                <div class="dropdown dropdown-profile">
+                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                        <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex" style="color: #001737;">
+                            <i data-feather="user" class="wd-16 ht-16"></i>
+                        </div>
+                    </a><!-- dropdown-link -->
+                    <div class="dropdown-menu dropdown-menu-right tx-13">
+                        <div>
+                            <div class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
+                                <i data-feather="user" class="wd-32 ht-32"></i>
+                            </div>
+                            <h6 class="profile-tx tx-lg-16">한기헌</h6>
+                            <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                        <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
+                        <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
+                        <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </div><!-- navbar-right -->
+        </header><!-- content-header -->
+
+        <div class="content-body" style="background-color: #f4f5f8;">
+            <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+                <div class="row row-xs justify-content-between">
+                    <div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                <li class="breadcrumb-item"><a href="#">[42SEOUL] 의료 노쇼</a></li>
+                                <li class="breadcrumb-item" aria-current="page">미션 평가</li>
+                                <li class="breadcrumb-item active" aria-current="page">사전평가서 작성</li>
+                            </ol>
+                        </nav>
+                        <h2 class="df-title">사전평가서</h2>
+                        <p class="df-lead">동료가 제출한 미션에 대해 사전평가서를 작성합니다.</p>
+                    </div>
+                    <div class="d-d-none d-md-block">
+                        <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
+                    </div>
+                </div>
+                <div class="row row-xs mg-t-20">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body pd-25">
+                                <div class="row row-xs d-flex">
+                                    <div class="col-8 col-sm-3 col-lg-3">
+                                        <select class="custom-select" aria-label="" disabled>
+                                            <option value="1" >MISSION 01 : 병원 노쇼 분석</option>
+                                            <option value="2">MISSION 02</option>
+                                            <option value="3">MISSION 03</option>
+                                            <option value="4">MISSION 04</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-lg-2">
+                                        <select class="custom-select" aria-label="">
+                                            <option value="1" selected>1차 평가</option>
+                                            <option value="2">2차 평가</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-lg-2 offset-lg-3 mg-t-10 mg-sm-t-0">
+                                        <a href="" class="btn btn-block btn-white tx-14">임시 저장</a>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-lg-2 mg-t-10 mg-sm-t-0">
+                                        <a href="" class="btn btn-block btn-outline-primary tx-14">완료하기</a>
+                                    </div>
+                                </div><hr>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered tx-14 mg-b-0">
+                                        <tbody class="tx-center tx-14 " style="border-bottom: 1px solid #e5e9f2;">
+                                            <tr class="ht-50">
+                                                <td class="wd-20p table-light tx-light">이름</td>
+                                                <td class="wd-30p">한기헌</td>
+                                                <td class="wd-20p table-light tx-light">제출 시간</td>
+                                                <td class="wd-30p">2021. 02. 25. 15:32</td>
+                                            </tr>
+                                            <tr class="ht-50">
+                                                <td class="wd-20p table-light tx-light">첨부 파일</td>
+                                                <td colspan="3">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i data-feather="file" class="tx-color-03 d-none d-sm-block"></i>
+                                                            <div class="file-body tx-left mg-l-10">
+                                                                <p class="file-name">Medical Certificate.pdf</p>
+                                                                <p class="file-size"><span>10.45KB</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <a href="#" class="btn btn-sm btn-white btn-download" onclick=""><i data-feather="download" class="mg-r-2"></i> 다운로드</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tr><tr class="ht-50">
+                                                <td class="wd-20p table-light tx-light">자기평가서</td>
+                                                <td colspan="3">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            
+                                                            <div class="file-body tx-left mg-l-10">
+                                                                <p class="file-name">자기평가서</p>
+                                                                <p class="file-size"><span>Project1 - Mission1</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <a href="#" class="btn btn-sm btn-white btn-download" onclick="">확인하기</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="ht-50">
+                                                <td class="wd-20p table-light tx-light">미션에 대한 설명</td>
+                                                <td class="tx-left" colspan="3">
+                                                    <p class="mg-b-0">
+                                                        숫자가 표시되는 계량기의 숫자 표시부의 사진을 확보하고 다음 과정의 프로그램을 작성한다.
+                                                        1. 회전 / 2. 광각뷰 보정 / 3. Crop / 4. Gray Scale로 변환
+                                                        숫자가 표시되는 계량기의 숫자 표시부의 사진을 확보하고 다음 과정의 프로그램을 작성한다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="card mg-t-16">
+                                        <div class="card-body pd-25">
+                                            <div class="d-flex align-items-center">
+                                                <i data-feather="clock" class="tx-color-03"></i>
+                                                <p class="tx-bold tx-14 mg-b-0 mg-l-10">날짜 / 시간</p>
+                                            </div><hr>
+                                            <div>
+                                                <p class="tx-semibold tx-14 mg-b-0">가능한 시간 체크</p>
+                                                <div class="d-sm-flex mg-t-16">
+                                                    <div>
+                                                        <label>
+                                                            <input type="checkbox" class="check-custom" id="c_eval_1_1" name="c-eval-1">
+                                                            <span class="check-toggle" for="c_eval_1_1"></span>&ensp;4/9 10:00-11:30
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="mg-sm-l-40">
+                                                            <input type="checkbox" class="check-custom" id="c_eval_1_2" name="c-eval-1">
+                                                            <span class="check-toggle" for="c_eval_1_2"></span>&ensp;4/9 14:00-15:30
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="mg-sm-l-40">
+                                                            <input type="checkbox" class="check-custom" id="c_eval_1_2" name="c-eval-1">
+                                                            <span class="check-toggle" for="c_eval_1_2"></span>&ensp;4/9 16:00-17:30
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card mg-t-16">
+                                        <div class="card-body pd-25">
+                                            <div class="d-flex align-items-center">
+                                                <i data-feather="thumbs-up" class="tx-color-03"></i>
+                                                <p class="tx-bold tx-14 mg-b-0 mg-l-10">사전 평가</p>
+                                            </div><hr>
+                                            <div>
+                                                <p class="tx-semibold tx-14 mg-b-0">1. 모듈 설명 가독성</p>
+                                                <div class="d-sm-flex mg-t-16">
+                                                    <div>
+                                                        <label>
+                                                            <input type="radio" class="check-custom" id="c_eval_1_1" name="c-eval-1">
+                                                            <span class="check-toggle" for="c_eval_1_1"></span>&ensp;좋음
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="mg-sm-l-40">
+                                                            <input type="radio" class="check-custom" id="c_eval_1_2" name="c-eval-1">
+                                                            <span class="check-toggle" for="c_eval_1_2"></span>&ensp;개선할 필요 있음
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div><hr>
+                                            <div>
+                                                <p class="tx-semibold tx-14 mg-b-0">2. 코드의 비주얼적 가독성</p>
+                                                <div class="d-sm-flex mg-t-16">
+                                                    <div>
+                                                        <label>
+                                                            <input type="radio" class="check-custom" id="c_eval_1_1" name="c-eval-1">
+                                                            <span class="check-toggle" for="c_eval_1_1"></span>&ensp;좋음
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="mg-sm-l-40">
+                                                            <input type="radio" class="check-custom" id="c_eval_1_2" name="c-eval-1">
+                                                            <span class="check-toggle" for="c_eval_1_2"></span>&ensp;개선할 필요 있음
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div><hr>
+                                            <div>
+                                                <p class="tx-semibold tx-14 mg-b-0">3. 코드의 시멘틱적 가독성</p>
+                                                <div class="d-sm-flex mg-t-16">
+                                                    <div>
+                                                        <label>
+                                                            <input type="radio" class="check-custom" id="c_eval_1_1" name="c-eval-1">
+                                                            <span class="check-toggle" for="c_eval_1_1"></span>&ensp;좋음
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="mg-sm-l-40">
+                                                            <input type="radio" class="check-custom" id="c_eval_1_2" name="c-eval-1">
+                                                            <span class="check-toggle" for="c_eval_1_2"></span>&ensp;개선할 필요 있음
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div><hr>
+                                            <div>
+                                                <p class="tx-semibold tx-14 mg-b-0">4. 사용된 기술 옵션이 최선인지</p>
+                                                <div class="d-sm-flex mg-t-16">
+                                                    <div>
+                                                        <label>
+                                                            <input type="radio" class="check-custom" id="c_eval_1_1" name="c-eval-1">
+                                                            <span class="check-toggle" for="c_eval_1_1"></span>&ensp;좋음
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <label class="mg-sm-l-40">
+                                                            <input type="radio" class="check-custom" id="c_eval_1_2" name="c-eval-1">
+                                                            <span class="check-toggle" for="c_eval_1_2"></span>&ensp;개선할 필요 있음
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div><hr>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="/lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="/lib/peity/jquery.peity.min.js"></script>
+    <script src="/lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+    <script src="/assets/js/dashforge.aside.js"></script>
+    <script src="/assets/js/dashforge.sampledata.js"></script>
+    <script src="/assets/js/dashboard-four.js"></script>
+
+</body>
+</html>

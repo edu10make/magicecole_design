@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>내 미션 평가요청 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
+</head>
+
+<body class="d-flex flex-column">
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="index.html"><img src="/assets/img/logo_ia.png" class="aside-logo" ondragstart="return false"></a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="aside-loggedin-user">
+                    <h6 class="tx-semibold mg-b-0">[42SEOUL] 빅데이터 분석</h6>
+                    <p class="tx-color-03 tx-12 btn-uppercase mg-b-0">강의 코드&nbsp;<span class="tx-color-03 tx-bold">42SEOUL</span></p>
+                </div>
+            </div><!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-label">학습 메뉴</li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지사항</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="flag"></i><span>프로젝트</span></a></li>
+                <li class="nav-item with-sub show">
+                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션평가</span></a>
+                    <ul>
+                        <li class="active"><a href="">내 미션 평가요청</a></li>
+                        <li><a href="">내 미션 평가결과</a></li>
+                        <li><a href="">내 동료 평가하기</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>결과</span></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+        <header class="navbar navbar-header">
+            <div class="navbar-right">
+                <div class="dropdown dropdown-profile">
+                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                        <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex" style="color: #001737;">
+                            <i data-feather="user" class="wd-16 ht-16"></i>
+                        </div>
+                    </a><!-- dropdown-link -->
+                    <div class="dropdown-menu dropdown-menu-right tx-13">
+                        <div>
+                            <div class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
+                                <i data-feather="user" class="wd-32 ht-32"></i>
+                            </div>
+                            <h6 class="profile-tx tx-lg-16">한기헌</h6>
+                            <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                        <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
+                        <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
+                        <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </div><!-- navbar-right -->
+        </header><!-- content-header -->
+
+        <div class="content-body" style="background-color: #f4f5f8;">
+            <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+                <div class="row row-xs justify-content-between">
+                    <div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                <li class="breadcrumb-item"><a href="#">[42SEOUL] 빅데이터 분석</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">동료 평가</li>
+                            </ol>
+                        </nav>
+                        <h2 class="df-title">내 미션 평가 요청</h2>
+                        <p class="df-lead">내 미션을 평가할 동료를 선택합니다.</p>
+                    </div>
+                    <div class="d-d-none d-md-block">
+                        <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
+                    </div>
+                </div>
+                <div class="row row-xs mg-t-20">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body pd-25">
+                                <div class="row row-xs d-flex">
+                                    <div class="col-8 col-sm-3 col-lg-3">
+                                        <select class="custom-select" aria-label="">
+                                            <option value="1" selected>MISSION 01 : 미터기 텍스트</option>
+                                            <option value="2">MISSION 02</option>
+                                            <option value="3">MISSION 03</option>
+                                            <option value="4">MISSION 04</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-lg-2">
+                                        <select class="custom-select" aria-label="">
+                                            <option value="1" selected>1차 평가</option>
+                                            <option value="2">2차 평가</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-lg-2 offset-6 offset-sm-3 offset-lg-5 mg-t-10 mg-sm-t-0">
+                                        <a href="" class="btn btn-block btn-outline-primary tx-14">요청하기</a>
+                                    </div>
+                                </div><hr>
+                                <div class="table-responsive">
+                                    <table class="table tx-nowrap tx-14 mg-b-0">
+                                        <thead class="tx-center">
+                                            <th class="wd-10p">선택</th>
+                                            <th class="wd-10p">이름</th>
+                                            <th>메일</th>
+                                            <th>미션 진행 상황</th>
+                                            <th>평가 평점</th>
+                                            <th>프로젝트 링크</th>
+                                        </thead>
+                                        <tbody class="tx-center tx-14" style="border-bottom: 1px solid #e5e9f2;">
+                                            <tr>
+                                                <td>
+                                                    <label class="mg-b-0">
+                                                        <input type="radio" class="check-custom" id="eval-list-1" name="eval-list">
+                                                        <span class="check-toggle" for="eval-list-1"></span>
+                                                    </label>
+                                                </td>
+                                                <td>이정인</td>
+                                                <td>dlwjddls@gmail.com</td>
+                                                <td>
+                                                    <ul class="steps steps-sm justify-content-center">
+                                                        <li class="step-item complete">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">1</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item active">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">2</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">3</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">4</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>6</td>
+                                                <td class="tx-left"><a href=""><u>https://github.com/aowlrdpzh</u></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="mg-b-0">
+                                                        <input type="radio" class="check-custom" id="eval-list-2" name="eval-list">
+                                                        <span class="check-toggle" for="eval-list-2"></span>
+                                                    </label>
+                                                </td>
+                                                <td>이진주</td>
+                                                <td>wlswndl@gmail.com</td>
+                                                <td>
+                                                    <ul class="steps steps-sm justify-content-center">
+                                                        <li class="step-item complete">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">1</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item complete">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">2</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item active">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">3</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">4</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>5.3</td>
+                                                <td class="tx-left"><a href=""><u>https://github.com/dlshqpdltus123</u></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="mg-b-0">
+                                                        <input type="radio" class="check-custom" id="eval-list-3" name="eval-list">
+                                                        <span class="check-toggle" for="eval-list-3"></span>
+                                                    </label>
+                                                </td>
+                                                <td>박기성</td>
+                                                <td>qkrrltjd123@gmail.com</td>
+                                                <td>
+                                                    <ul class="steps steps-sm justify-content-center">
+                                                        <li class="step-item active">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">1</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">2</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">3</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">4</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>8</td>
+                                                <td class="tx-left"><a href=""><u>https://github.com/aowlrdpzh</u></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="mg-b-0">
+                                                        <input type="radio" class="check-custom" id="eval-list-4" name="eval-list">
+                                                        <span class="check-toggle" for="eval-list-4"></span>
+                                                    </label>
+                                                </td>
+                                                <td>이정명</td>
+                                                <td>wjdauddl@gmail.com</td>
+                                                <td>
+                                                    <ul class="steps steps-sm justify-content-center">
+                                                        <li class="step-item complete">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">1</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item active">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">2</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">3</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">4</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>5</td>
+                                                <td class="tx-left"><a href=""><u>https://github.com/dlwjdaud</u></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="mg-b-0">
+                                                        <input type="radio" class="check-custom" id="eval-list-5" name="eval-list">
+                                                        <span class="check-toggle" for="eval-list-5"></span>
+                                                    </label>
+                                                </td>
+                                                <td>이예진</td>
+                                                <td>dPwlsdl@gmail.com</td>
+                                                <td>
+                                                    <ul class="steps steps-sm justify-content-center">
+                                                        <li class="step-item complete">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">1</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item complete">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">2</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item complete">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">3</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="step-item active">
+                                                            <a href="" class="step-link">
+                                                                <span class="step-number">4</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>8</td>
+                                                <td class="tx-left"><a href=""><u>https://github.com/dldPwls</u></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination pagination-space justify-content-center mg-t-25 mg-b-0">
+                                        <li class="page-item text-center disabled"><a class="page-link np-element-pagenation- page-link-icon" href="#"><i data-feather="chevron-left"></i></a></li>
+                                        <li class="page-item active"><a class="page-link text-center np-element-pagenation" href="#">1</a></li>
+                                        <li class="page-item text-center"><a class="page-link np-element-pagenation-" href="#">2</a></li>
+                                        <li class="page-item text-center"><a class="page-link np-element-pagenation-" href="#">3</a></li>
+                                        <li class="page-item text-center"><a class="page-link np-element-pagenation-" href="#">4</a></li>
+                                        <li class="page-item text-center"><a class="page-link np-element-pagenation-" href="#">5</a></li>
+                                        <li class="page-item text-center"><a class="page-link np-element-pagenation- page-link-icon" href="#"><i data-feather="chevron-right"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="/lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="/lib/peity/jquery.peity.min.js"></script>
+    <script src="/lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+    <script src="/assets/js/dashforge.aside.js"></script>
+    <script src="/assets/js/dashforge.sampledata.js"></script>
+    <script src="/assets/js/dashboard-four.js"></script>
+
+</body>
+</html>

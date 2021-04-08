@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>대시보드 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
+</head>
+
+<body class="d-flex flex-column">
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="index.html"><img src="/assets/img/logo_ia.png" class="aside-logo" ondragstart="return false"></a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="aside-loggedin-user">
+                    <h6 class="tx-semibold mg-b-0">[42SEOUL] 빅데이터 분석</h6>
+                    <p class="tx-color-03 tx-12 btn-uppercase mg-b-0">강의 코드&nbsp;<span class="tx-color-03 tx-bold">42SEOUL</span></p>
+                </div>
+            </div><!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-label">학습 메뉴</li>
+                <li class="nav-item active"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지사항</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="flag"></i><span>프로젝트</span></a></li>
+                <li class="nav-item with-sub">
+                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션평가</span></a>
+                    <ul>
+                        <li><a href="">내 미션 평가요청</a></li>
+                        <li><a href="">내 미션 평가결과</a></li>
+                        <li><a href="">내 동료 평가하기</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>결과</span></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+        <header class="navbar navbar-header">
+            <div class="navbar-right">
+                <div class="dropdown dropdown-profile">
+                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                        <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex" style="color: #001737;">
+                            <i data-feather="user" class="wd-16 ht-16"></i>
+                        </div>
+                    </a><!-- dropdown-link -->
+                    <div class="dropdown-menu dropdown-menu-right tx-13">
+                        <div>
+                            <div class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
+                                <i data-feather="user" class="wd-32 ht-32"></i>
+                            </div>
+                            <h6 class="profile-tx tx-lg-16">한기헌</h6>
+                            <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                        <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
+                        <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
+                        <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </div><!-- navbar-right -->
+        </header><!-- content-header -->
+
+        <div class="content-body" style="background-color: #f4f5f8;">
+            <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+                <div class="row row-xs d-flex justify-content-between">
+                    <div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                <li class="breadcrumb-item"><a href="#">[42SEOUL] 빅데이터 분석</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">대시보드</li>
+                            </ol>
+                        </nav>
+                        <h2 class="tx-light mg-b-0">대시보드</h2>
+                    </div>
+                    <div class="d-d-none d-md-block">
+                        <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
+                    </div>
+                </div>
+                <div class="row row-xs mg-t-20">
+                    <div class="col-12 col-sm-9">
+                        <div class="card ht-140">
+                            <div class="card-body align-items-center">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-sm tx-14 tx-nowrap mg-b-0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="wd-70p"><a href=""><span class="notice-fnt">[공지]</span> [특강] 대학교육과 AI (MS 김영욱 부장)</a></td>
+                                                <td class="wd-15p tx-center">관리자A</td>
+                                                <td class="wd-15p tx-center">2021.02.07</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="wd-70p"><a href=""><span class="notice-fnt">[공지]</span> [팀 배정] 팀별 담당 보조 강사 배정 안내</a></td>
+                                                <td class="wd-15p tx-center">관리자A</td>
+                                                <td class="wd-15p tx-center">2021.02.03</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="wd-70p"><a href=""><span class="notice-fnt">[공지]</span> [공통] 데이터 분석 수업 개강 안내</a></td>
+                                                <td class="wd-15p tx-center">관리자A</td>
+                                                <td class="wd-15p tx-center">2021.02.01</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-xs">
+                            <div class="col-6">
+                                <div class="card ht-180 mg-t-10">
+                                    <div class="card-body pd-25 d-flex">
+                                        <div class="col-xs">
+                                            <h6 class="dash-mge">미션 제출<span class="tx-primary">.</span></h6>
+                                            <h3 class="tx-xl-32 tx-26 tx-bold mg-b-0">
+                                                <span>2</span>개
+                                                <span class="tx-16 tx-color-03">/&nbsp;<span>4</span>개</span>
+                                            </h3>
+                                            <div class="hr-dash"></div>
+                                            <h6 class="tx-12 tx-semibold tx-color-03 mg-b-4 d-lg-none d-xl-block">최근 제출</h6>
+                                            <p class="tx-14 tx-color-03 mg-b-0"><span>2021-00-00 00:00</span></p>
+                                        </div>
+                                        <div class="col d-flex justify-content-end align-items-center">
+                                            <div class="d-inline-block pos-relative">
+                                                <div class="np-circle">
+                                                    <span class="peity-donut" data-peity='{ "fill": ["#00b8a9","#e5e9f2"], "height": 110, "width":110, "innerRadius": 46 }'>50,50</span>
+                                                    <div class="pos-absolute a-0 d-flex flex-column align-items-center justify-content-center">
+                                                        <h3 class="tx-24 tx-semibold mg-b-0">50%</h3>
+                                                        <span class="tx-12 tx-semibold tx-color-03">제출</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card ht-180 mg-t-10">
+                                    <div class="card-body pd-25 d-flex">
+                                        <div class="col-xs">
+                                            <h6 class="dash-mge">내 평균 점수<span class="tx-primary">.</span></h6>
+                                            <h3 class="tx-xl-32 tx-26 tx-bold mg-b-0">
+                                                <span>82</span>점
+                                                <span class="tx-16 tx-color-03">/&nbsp;<span>100</span>점</span>
+                                            </h3>
+                                            <div class="hr-dash"></div>
+                                            <h6 class="tx-12 tx-semibold tx-color-03 mg-b-4 d-lg-none d-xl-block">최근 평가</h6>
+                                            <p class="tx-14 tx-color-03 mg-b-0"><span>2021-00-00 00:00</span></p>
+                                        </div>
+                                        <div class="col d-flex justify-content-end align-items-center">
+                                            <div class="d-inline-block pos-relative">
+                                                <div class="np-circle">
+                                                    <span class="peity-donut" data-peity='{ "fill": ["#00b8a9","#e5e9f2"], "height": 110, "width":110, "innerRadius": 46 }'>82,18</span>
+                                                    <div class="pos-absolute a-0 d-flex flex-column align-items-center justify-content-center">
+                                                        <h3 class="tx-24 tx-semibold mg-b-0">82점</h3>
+                                                        <span class="tx-12 tx-semibold tx-color-03">평균</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-xs">
+                            <div class="col-6">
+                                <div class="card ht-270 mg-t-10">
+                                    <div class="card-body pd-25">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="dash-mge">미션 진행 상황<span class="tx-primary">.</span></h6>
+                                            <a href="" class="tx-12 tx-semibold">전체보기</a>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table tx-medium tx-center tx-nowrap mg-b-0">
+                                                <thead class="tx-10 tx-medium tx-center tx-color-03">
+                                                    <th class="wd-10p">미션</th>
+                                                    <th>미션명</th>
+                                                    <th>제출 여부</th>
+                                                    <th>평가 여부</th>
+                                                </thead>
+                                                <tbody style="border-bottom: 1px solid #e5e9f2;">
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">01</span></td>
+                                                        <td class="tx-left tx-medium">미터기 텍스트</td>
+                                                        <td><span class="badge badge-success">제출완료</span></td>
+                                                        <td><span class="badge badge-success">평가완료</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">02</span></td>
+                                                        <td class="tx-left tx-medium">문자 인식</td>
+                                                        <td><span class="badge badge-success">제출완료</span></td>
+                                                        <td><span class="badge badge-warning">평가중</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">03</span></td>
+                                                        <td class="tx-left tx-medium">이노베이션아카데미</td>
+                                                        <td><span class="badge badge-primary">예정</span></td>
+                                                        <td><span class="badge badge-primary">예정</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">04</span></td>
+                                                        <td class="tx-left tx-medium">빅데이터 분석</td>
+                                                        <td><span class="badge badge-primary">예정</span></td>
+                                                        <td><span class="badge badge-primary">예정</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card ht-270 mg-t-10">
+                                    <div class="card-body pd-25">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="dash-mge">동료 평가 진행 상황<span class="tx-primary">.</span></h6>
+                                            <a href="" class="tx-12 tx-semibold">전체보기</a>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table tx-medium tx-center tx-nowrap mg-b-0">
+                                                <thead class="tx-10 tx-medium tx-center tx-color-03">
+                                                    <th class="wd-10p">미션</th>
+                                                    <th>미션명</th>
+                                                    <th>평가할 동료</th>
+                                                    <th>평가 여부</th>
+                                                </thead>
+                                                <tbody style="border-bottom: 1px solid #e5e9f2;">
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">01</span></td>
+                                                        <td class="tx-left tx-medium">미터기 텍스트</td>
+                                                        <td>이준석</td>
+                                                        <td><span class="badge badge-success">평가완료</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">02</span></td>
+                                                        <td class="tx-left tx-medium">문자 인식</td>
+                                                        <td>최귀상</td>
+                                                        <td><span class="badge badge-success">평가완료</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">03</span></td>
+                                                        <td class="tx-left tx-medium">이노베이션아카데미</td>
+                                                        <td>이정인</td>
+                                                        <td><span class="badge badge-warning">평가중</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">04</span></td>
+                                                        <td class="tx-left tx-medium">빅데이터 분석</td>
+                                                        <td>이진주</td>
+                                                        <td><span class="badge badge-primary">예정</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-xs">
+                            <div class="col-6">
+                                <div class="card ht-370 mg-t-10">
+                                    <div class="card-body pd-25">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="dash-mge">미션 점수<span class="tx-primary">.</span></h6>
+                                            <div class="d-none d-md-block mg-b-10">
+                                                <ul class="list-inline tx-10 tx-color-03 mg-b-0">
+                                                    <li class="list-inline-item mg-l-5">
+                                                        <span class="d-inline-block wd-7 ht-7 bg-gray-300 rounded-circle"></span>
+                                                        <span class="d-none d-md-inline">&nbsp;평균 점수</span>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <span class="d-inline-block wd-7 ht-7 bg-primary rounded-circle"></span>
+                                                        <span class="d-none d-md-inline">&nbsp;내 점수</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="chart-seventeen mg-t-15"><canvas id="chartBar2"></canvas></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card ht-180 mg-t-10">
+                                    <div class="card-body pd-25">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="dash-mge">배지<span class="tx-primary">.</span></h6>
+                                            <a href="" class="tx-12 tx-semibold">전체보기</a>
+                                        </div>
+                                        <div class="tx-center d-flex justify-content-between">
+                                            <div class="col-xl-4 col-lg-6 col-xs-4">
+                                                <img src="/assets/img/badge-1-01.png" ondragstart="return false">
+                                                <h6 class="tx-12 tx-semibold tx-color-02 mg-t-5 mg-b-0">최초 로그인</h6>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-xs-4">
+                                                <img src="/assets/img/badge-2-01.png" ondragstart="return false">
+                                                <h6 class="tx-12 tx-semibold tx-color-02 mg-t-5 mg-b-0">출석 50%</h6>
+                                            </div>
+                                            <div class="col-lg-4 col-xs-4 d-lg-none d-xl-block">
+                                                <img src="/assets/img/badge-3-01.png" ondragstart="return false">
+                                                <h6 class="tx-12 tx-semibold tx-color-02 mg-t-5 mg-b-0">최초 댓글</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card ht-180 mg-t-10">
+                                    <div class="card-body pd-25">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="dash-mge">수료 기준<span class="tx-primary">.</span></h6>
+                                            <p class="tx-10 tx-color-03">*모든 기준이 충족되어야 수료가 가능합니다.</p>
+                                        </div>
+                                        <div class="table-responsive mg-t-15">
+                                            <table class="table tx-12 tx-medium tx-center tx-nowrap mg-b-0">
+                                                <tbody style="border-bottom: 1px solid #e5e9f2;">
+                                                    <tr>
+                                                        <td class="tx-color-03">미션 제출</td>
+                                                        <td><u>3개 이상</u></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tx-color-03">평균 점수</td>
+                                                        <td><u>80점 이상</u></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <div class="card">
+                            <div class="card-body pd-25">
+                                <h3 class="tx-xl-32 tx-26 tx-light mg-b-0">안녕하세요 👋</h3>
+                                <h3 class="tx-xl-32 tx-26 tx-light mg-b-20"><span class="tx-bold">한기헌</span>님.</h3>
+                                <h6 class="tx-12 tx-bold tx-primary mg-b-10">TODAY</h6>
+                                <h3 class="tx-14 lh-5 mg-b-0">성공은 형편없는 선생님이다. 그것은 똑똑한 사람들로 하여금 절대 패할 수 없다고 착각하게 만든다.</h3>
+                                <div class="hr-"></div>
+                                <p class="tx-12 tx-color-03 mg-t-4 mg-b-0">빌 게이츠(마이크로 소프트 공동 창업자)</p>
+                            </div>
+                        </div>
+                        <div class="card mg-t-10">
+                            <div class="card-body d-flex justify-content-center">
+                                <div id="calendarInline"></div>
+                            </div>
+                        </div>
+                        <div class="card mg-t-10">
+                            <div class="card-body pd-25">
+                                <div>
+                                    <h2 class="mg-b-0">9일</h2>
+                                    <p>화요일</p>
+                                </div><hr>
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-sm tx-13 tx-nowrap mg-b-0">
+                                        <tbody>
+                                            <tr>
+                                                <a href="" class="d-flex align-items-center mg-b-20 bd-l bd-3 bd-primary">
+                                                    <div class="mg-l-8">
+                                                        <h6 class="mg-b-0">MISSON 03. 1차 동료 평가</h6>
+                                                        <span class="tx-12 tx-color-03">2021-00-00 18:00까지</span>
+                                                    </div>
+                                                </a>
+                                            </tr>
+                                            <tr>
+                                                <a href="" class="d-flex align-items-center bd-l bd-3 bd-primary">
+                                                    <div class="mg-l-8">
+                                                        <h6 class="mg-b-0">MISSON 04. 빅데이터 분석</h6>
+                                                        <span class="tx-12 tx-color-03">2021-00-00 18:00까지</span>
+                                                    </div>
+                                                </a>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="/lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="/lib/peity/jquery.peity.min.js"></script>
+    <script src="/lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+    <script src="/assets/js/dashforge.aside.js"></script>
+    <script src="/assets/js/dashforge.sampledata.js"></script>
+    <script src="/assets/js/dashboard-two.js"></script>
+    <script src="/assets/js/dashboard-four.js"></script>
+
+    <script src="/lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="/lib/moment/min/moment.min.js"></script>
+    <script src="/lib/fullcalendar/fullcalendar.min.js"></script>
+    <script src="/lib/select2/js/select2.full.min.js"></script>
+
+    <script src="/assets/js/calendar-events.js"></script>
+    <script src="/assets/js/dashforge.calendar.js"></script>
+
+</body>
+</html>
