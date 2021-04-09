@@ -133,22 +133,62 @@
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="m1" role="tabpanel" aria-labelledby="m1-tab">
                                         <div class="mg-t-30 mg-b-8">
-                                            <img src="/assets/img/inno-total-result.png" ondragstart="return false">
+                                            <canvas id="radar_chart1"></canvas>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="m2" role="tabpanel" aria-labelledby="m2-tab">
                                         <div class="mg-t-20 pd-20">
-                                            <img src="/assets/img/inno-total-code-Readability.png" ondragstart="return false">
+                                            <canvas id="radar_chart2"></canvas>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="m3" role="tabpanel" aria-labelledby="m3-tab">
                                         <div class="mg-t-20 pd-20">
-                                            <img src="/assets/img/inno-total-tech-stack.png" ondragstart="return false">
+                                            <canvas id="stick_chart" width="400" height="400"></canvas>
                                         </div><!-- row -->
                                     </div>
                                     <div class="tab-pane fade" id="m4" role="tabpanel" aria-labelledby="m4-tab">
                                         <div class="mg-t-20 pd-20">
-                                            <img src="/assets/img/inno-total-work-recommendation.png" ondragstart="return false">
+                                            <table class="table">
+                                                <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">이름</th>
+                                                        <th scope="col">대기업 취업적합도</th>
+                                                        <th scope="col">스타트업 취업적합도</th>
+                                                        <th scope="col">창업</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>RM</td>
+                                                        <td>0.88</td>
+                                                        <td>0.90</td>
+                                                        <td>0.92</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>모모</td>
+                                                        <td>0.80</td>
+                                                        <td>0.84</td>
+                                                        <td>0.30</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>지효</td>
+                                                        <td>0.65</td>
+                                                        <td>0.87</td>
+                                                        <td>0.24</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>지효</td>
+                                                        <td>0.65</td>
+                                                        <td>0.87</td>
+                                                        <td>0.24</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -484,6 +524,9 @@
     <script src="/assets/js/calendar-events.js"></script>
     <script src="/assets/js/dashforge.calendar.js"></script>
 
+    <script src="/assets/js/radar_chart.js"></script>
+    <script src="/assets/js/stick_chart.js"></script>
+    
     <script>
         var ctx = document.getElementById('myChart').getContext('2d');
         var myChart = new Chart(ctx, {
