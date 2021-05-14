@@ -147,7 +147,9 @@
                                         
                                     </div>
                                     <div class="mg-t-15">
-                                        <img src="/assets/img/inno-total-result.png" ondragstart="return false">
+                                        <div id="chartjs-radar">
+                                            <canvas id="radar_chart5"></canvas>
+                                        </div>
                                     </div>
                                     <div class="accordion mg-t-10" id="accordionExample">
                                         <div class="card">
@@ -263,7 +265,9 @@
                                     <div class="tab-pane fade" id="m2" role="tabpanel" aria-labelledby="m2-tab">
                                 </td>
                                     <div class="mg-t-20 pd-20">
-                                        <img src="/assets/img/inno-momo-code-Readability.png" ondragstart="return false">
+                                        <div id="chartjs-radar">
+                                        <canvas id="radar_chart6"></canvas>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="m3" role="tabpanel" aria-labelledby="m3-tab">
@@ -273,7 +277,28 @@
                                 </div>
                                 <div class="tab-pane fade" id="m4" role="tabpanel" aria-labelledby="m4-tab">
                                     <div class="mg-t-20 pd-20">
-                                        <img src="/assets/img/inno-momo-work-recommendation.png" ondragstart="return false">                                   
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">이름</th>
+                                                    <th scope="col">대기업 취업적합도</th>
+                                                    <th scope="col">스타트업 취업적합도</th>
+                                                    <th scope="col">창업</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>모모</td>
+                                                    <td>0.80</td>
+                                                    <td>0.84</td>
+                                                    <td>0.30</td>
+                                                </tr>
+                                               
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -308,6 +333,9 @@
 
     <script src="/assets/js/calendar-events.js"></script>
     <script src="/assets/js/dashforge.calendar.js"></script>
+    
+    <script src="/assets/js/radar_chart.js"></script>
+    <script src="/assets/js/stick_chart.js"></script>
 
     <script>
         var ctx = document.getElementById('myChart').getContext('2d');

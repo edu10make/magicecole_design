@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>전체 레포트 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
+</head>
+
+<body class="d-flex flex-column">
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="index.html"><img src="/assets/img/logo_ia.png" class="aside-logo" ondragstart="return false"></a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="aside-loggedin-user">
+                    <h6 class="tx-semibold mg-b-0">[42SEOUL] 의료 데이터</h6>
+                    <p class="tx-color-03 tx-12 btn-uppercase mg-b-0">강의 코드&nbsp;<span
+                            class="tx-color-03 tx-bold">42SEOUL</span></p>
+                </div>
+            </div><!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-label">멘토 메뉴</li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지사항</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="flag"></i><span>프로젝트</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션 관리</span></a>
+                </li>
+                <li class="nav-item with-sub show">
+                    <a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>레포트</span></a>
+                    <ul>
+                        <li class="active"><a href="">전체 레포트</a></li>
+                        <li><a href="">개인별 레포트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+        <header class="navbar navbar-header">
+            <div class="navbar-right">
+                <div class="dropdown dropdown-profile">
+                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                        <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex"
+                            style="color: #001737;">
+                            <i data-feather="user" class="wd-16 ht-16"></i>
+                        </div>
+                    </a><!-- dropdown-link -->
+                    <div class="dropdown-menu dropdown-menu-right tx-13">
+                        <div>
+                            <div
+                                class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
+                                <i data-feather="user" class="wd-32 ht-32"></i>
+                            </div>
+                            <h6 class="profile-tx tx-lg-16">한기헌</h6>
+                            <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                        <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
+                        <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
+                        <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </div><!-- navbar-right -->
+        </header><!-- content-header -->
+
+        <div class="content-body" style="background-color: #f4f5f8;">
+            <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+                <div class="row row-xs d-flex justify-content-between mg-b-20">
+                    <div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                <li class="breadcrumb-item"><a href="#">AI 리터러시 교육과정(코드번호 : A0503)</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">DT 진단</li>
+                            </ol>
+                        </nav>
+                        <h2 class="df-title">DT 진단</h2>
+                        <p class="df-lead">나의 DT 수준을 평가합니다.</p>
+                    </div>
+                    <div class="d-d-none d-md-block">
+                        <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
+                    </div>
+                </div>
+                <div class="row row-xs">
+                    <div class="col-12 col-sm-12">
+                       
+                        <div class="card mg-t-10">
+                            <div class="card-body pd-25">
+                                <div class=>
+                                    <canvas id="radar_chart1"></canvas>
+                                    <div class="table-responsive col-sm-12 ">
+                                        <table class="table tx-nowrap tx-14 mg-b-0">
+                                            <thead class="tx-10 tx-medium tx-center tx-color-3">
+                                                <th class="wd-10p"></th>
+                                                <th class="wd-10p">Business</th>
+                                                <th class="wd-10p">Data</th>
+                                                <th class="wd-10p">Interface</th>
+
+                                            </thead>
+                                            <tbody class="tx-center tx-14" style="border-bottom: 1px solid #e5e9f2;">
+                                                <tr>
+                                                    <td><span class="tx-bold tx-primary tx-10">1차 Test 평균</span></td>
+                                                    <td >5</td>
+                                                    <td>
+                                                        13
+                                                    </td>
+                                                    <td>18</td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="tx-bold tx-primary tx-10">나의 1차 Test</span></td>
+                                                    <td >4</td>
+                                                    <td>
+                                                        12
+                                                    </td>
+                                                    <td>16</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="tx-bold tx-primary tx-10">1차 Test 평균</span></td>
+                                                    <td >3
+                                                    </td>
+                                                    <td>
+                                                        20
+                                                    </td>
+                                                    <td>15</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="tx-bold tx-primary tx-10">나의 2차 Test</span></td>
+                                                    <td >2</td>
+                                                    <td>
+                                                        24
+                                                    </td>
+                                                    <td>19</td>
+
+                                                </tr>
+                                                
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mg-t-10">
+                    <div class="card-body align-items-center pd-25">
+                        <ul class="nav nav-line nav-justified tx-sm-12 tx-11 tx-bold" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link lh-4 active" id="m1-tab" data-toggle="tab" href="#m1" role="tab"
+                                    aria-controls="mission1" aria-selected="true">Business</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link lh-4" id="m2-tab" data-toggle="tab" href="#m2" role="tab"
+                                    aria-controls="mission3" aria-selected="false">Data</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link lh-4" id="m3-tab" data-toggle="tab" href="#m3" role="tab"
+                                    aria-controls="mission4" aria-selected="false">Interface</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="m1" role="tabpanel" aria-labelledby="m1-tab">
+                                <div class="mg-t-30">
+                                    <div class="row mg-b-15">
+                                        <div class="col">
+                                            <h6 class="dash-mge mg-b-5 text-center">Business</h6>
+                                            <p class="tx-color-03 tx-14 mg-b-10 text-center">점수&nbsp;<span
+                                                    class="tx-semibold">6</span></p>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card ht-50 ">
+                                                <p class="tx-color-03 tx-14 mg-b-0 pd-lg-x-10 pd-t-5">사업(事業) 혹은 비즈니스(business)는 물건이나 용역을
+                                                    고객이나 다른 사업체에 판매할 수 있을 만큼의 경제적 자유를 누릴 수 있는 국가 안에 존재하는 법적으로 인식되는 조직체나
+                                                    활동이다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="table-responsive">
+                                            <table class="table tx-nowrap tx-14 mg-b-0">
+                                                <thead class="tx-10 tx-medium tx-center tx-color-03">
+                                                    <th class="wd-10p">세부 역량</th>
+                                                    <th>설명</th>
+                                                    <th class="wd-10p">내 점수</th>
+                                                    <th class="wd-10p">평균</th>
+
+                                                </thead>
+                                                <tbody class="tx-center tx-14"
+                                                    style="border-bottom: 1px solid #e5e9f2;">
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">개발 방법론</span></td>
+                                                        <td class="text-left">개발과정에서의 일관성을 유지하고 프로그래머들간의 효과적인 협업이
+                                                            이루어질수 있도록 돕기 위한
+                                                            방법론이다.</td>
+                                                        <td>
+                                                            13
+                                                        </td>
+                                                        <td>18</td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">공유 경제</span></td>
+                                                        <td class="text-left">공유 경제는 물품을 소유의 개념이 아닌 서로 대여해 주고 차용해 쓰는
+                                                            개념으로 인식하여 경제활동을
+                                                            하는 것을 가리키는 표현이다. </td>
+                                                        <td>
+                                                            12
+                                                        </td>
+                                                        <td>16</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">도메인</span></td>
+                                                        <td class="text-left">도메인 네임은네트워크상에서 컴퓨터를 식별하는 호스트명을 의미한다.
+                                                        </td>
+                                                        <td>
+                                                            20
+                                                        </td>
+                                                        <td>15</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">블록체인</span></td>
+                                                        <td class="text-left">블록체인은 대규모의 노드들 사이에서 각 노드에 분산 저장된 장부의
+                                                            데이터를 항상 있도록 하는 합의
+                                                            수렴 알고리즘으로 볼 수 있다. </td>
+                                                        <td>
+                                                            24
+                                                        </td>
+                                                        <td>19</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">전자상거래</span></td>
+                                                        <td class="text-left">용어(用語)는 일정 분야에서 쓰이는 말이다. </td>
+                                                        <td>
+                                                            24
+                                                        </td>
+                                                        <td>12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">O2O</span></td>
+                                                        <td class="text-left">도메인 네임은네트워크상에서 컴퓨터를 식별하는 호스트명을 의미한다.
+                                                        </td>
+                                                        <td>
+                                                            20
+                                                        </td>
+                                                        <td>15</td>
+
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="m2" role="tabpanel" aria-labelledby="m2-tab">
+                                <div class="mg-t-30">
+                                    <div class="row mg-b-15">
+                                        <div class="col">
+                                            <h6 class="dash-mge mg-b-5 text-center">Data</h6>
+                                            <p class="tx-color-03 tx-14 mg-b-10 text-center">점수&nbsp;<span
+                                                    class="tx-semibold">6</span></p>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card ht-50 ">
+                                                <p class="tx-color-03 tx-14 mg-b-0 pd-lg-x-10 pd-t-5">
+                                                    자료(資料, data, 데이터, 문화어: 데타)는 문자, 숫자, 소리, 그림, 영상, 단어 등의 형태로 된 의미 단위이다.
+                                                    보통 연구나 조사 등의 바탕이 되는 재료를 말하며, 자료를 의미있게 정리하면 정보가 된다. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table tx-nowrap tx-14 mg-b-0">
+                                            <thead class="tx-10 tx-medium tx-center tx-color-03">
+                                                <th class="wd-10p">세부 역량</th>
+                                                <th>설명</th>
+                                                <th class="wd-10p">내 점수</th>
+                                                <th class="wd-10p">평균</th>
+
+                                            </thead>
+                                            <tbody class="tx-center tx-14" style="border-bottom: 1px solid #e5e9f2;">
+                                                <tr>
+                                                    <td><span class="tx-bold tx-primary tx-10">빅데이터</span></td>
+                                                    <td class="text-left">개발과정에서의 일관성을 유지하고 프로그래머들간의 효과적인 협업이
+                                                        이루어질수 있도록 돕기 위한
+                                                        방법론이다.</td>
+                                                    <td>
+                                                        13
+                                                    </td>
+                                                    <td>18</td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="tx-bold tx-primary tx-10">클라우드</span></td>
+                                                    <td class="text-left">공유 경제는 물품을 소유의 개념이 아닌 서로 대여해 주고 차용해 쓰는
+                                                        개념으로 인식하여 경제활동을
+                                                        하는 것을 가리키는 표현이다. </td>
+                                                    <td>
+                                                        12
+                                                    </td>
+                                                    <td>16</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="tx-bold tx-primary tx-10">AI</span></td>
+                                                    <td class="text-left">도메인 네임은네트워크상에서 컴퓨터를 식별하는 호스트명을 의미한다.
+                                                    </td>
+                                                    <td>
+                                                        20
+                                                    </td>
+                                                    <td>15</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="m3" role="tabpanel" aria-labelledby="m3-tab">
+                                <div class="mg-t-30">
+                                    <div class="row mg-b-15">
+                                        <div class="col">
+                                            <h6 class="dash-mge mg-b-5 text-center">Interface</h6>
+                                            <p class="tx-color-03 tx-14 mg-b-10 text-center">점수&nbsp;<span
+                                                    class="tx-semibold">5</span></p>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card ht-50 ">
+                                                <p class="tx-color-03 tx-14 mg-b-0 pd-lg-x-10 pd-t-5">
+                                                    인터페이스(interface)는 서로 다른 두 개의 시스템, 장치 사이에서 정보나 신호를 주고받는 경우의 접점이나
+                                                    경계면이다. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="table-responsive">
+                                            <table class="table tx-nowrap tx-14 mg-b-0">
+                                                <thead class="tx-10 tx-medium tx-center tx-color-03">
+                                                    <th class="wd-10p">세부 역량</th>
+                                                    <th>설명</th>
+                                                    <th class="wd-10p">내 점수</th>
+                                                    <th class="wd-10p">평균</th>
+
+                                                </thead>
+                                                <tbody class="tx-center tx-14"
+                                                    style="border-bottom: 1px solid #e5e9f2;">
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">모바일</span></td>
+                                                        <td class="text-left">개발과정에서의 일관성을 유지하고 프로그래머들간의 효과적인 협업이
+                                                            이루어질수 있도록 돕기 위한
+                                                            방법론이다.</td>
+                                                        <td>
+                                                            13
+                                                        </td>
+                                                        <td>18</td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">웹</span></td>
+                                                        <td class="text-left">공유 경제는 물품을 소유의 개념이 아닌 서로 대여해 주고 차용해 쓰는
+                                                            개념으로 인식하여 경제활동을
+                                                            하는 것을 가리키는 표현이다. </td>
+                                                        <td>
+                                                            12
+                                                        </td>
+                                                        <td>16</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tx-bold tx-primary tx-10">IoT</span></td>
+                                                        <td class="text-left">도메인 네임은네트워크상에서 컴퓨터를 식별하는 호스트명을 의미한다.
+                                                        </td>
+                                                        <td>
+                                                            20
+                                                        </td>
+                                                        <td>15</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+                 <div class="card mg-t-10">
+                     <div class="card-body pd-25">
+                         <div class="mg-b-35">
+                             <h6 class="dash-mge mg-b-5">솔루션<span class="tx-primary">.</span></h6>
+                         </div>
+                         <h6 class="tx-15  tx-color-03">1차 DT 테스트에 비해 많이 성장했음</h6>
+                         <h6 class="tx-15  tx-color-03">하지만 아직 ‘Interface – 웹’이 평균에 못미침</h6>
+                         <h6 class="tx-15  tx-color-03">따라서 아래의 학습 리소스를 더 공부해보는 것을 추천함</h6>
+                         <h6 class="tx-15  tx-color-03">- 웹의 역사 : <a href="http://example.com">link</a></h6>
+                             
+                             
+                             </h6>
+                         
+                     </div>
+                 </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="/lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="/lib/peity/jquery.peity.min.js"></script>
+    <script src="/lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+    <script src="/assets/js/dashforge.aside.js"></script>
+    <script src="/assets/js/dashforge.sampledata.js"></script>
+    <script src="/assets/js/dashboard-two.js"></script>
+    <script src="/assets/js/dashboard-four.js"></script>
+
+    <script src="/lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="/lib/moment/min/moment.min.js"></script>
+    <script src="/lib/fullcalendar/fullcalendar.min.js"></script>
+    <script src="/lib/select2/js/select2.full.min.js"></script>
+
+    <script src="/assets/js/calendar-events.js"></script>
+    <script src="/assets/js/dashforge.calendar.js"></script>
+
+    <script src="/assets/js/radar_chart_1.js"></script>
+    <script src="/assets/js/stick_chart.js"></script>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['1일차', '2일차', '3일차', '4일차', '5일차', '6일차', '7일차'],
+                datasets: [{
+                    label: '출석률(%)',
+                    data: [90, 60, 70, 40, 60, 70, 40],
+                    pointRadius: 3,
+                    pointHoverRadius: 4,
+                    borderWidth: 1,
+                    borderColor: "#00B8A9",
+                    backgroundColor: "#00B8A9",
+                    fill: false,
+                    lineTension: 0
+                }]
+            },
+            options: {
+                Responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    position: "end"
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            fontColor: "rgba(0,0,0,0.5)",
+                            fontStyle: "bold",
+                            fontSize: 10,
+                            beginAtZero: true,
+                            maxTicksLimit: 5,
+                            padding: 10
+                        },
+                        gridLines: {
+                            drawTicks: false,
+                            display: false
+                        }
+                    }],
+                    xAxes: [{
+                        barPercentage: 0.5,
+                        categoryPercentage: 0.5,
+                        ticks: {
+                            fontColor: "rgba(0,0,0,0.5)",
+                            fontStyle: "bold",
+                            fontSize: 10,
+                            beginAtZero: true,
+                            maxTicksLimit: 5,
+                            padding: 10
+                        },
+                        gridLines: {
+                            drawTicks: false
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
