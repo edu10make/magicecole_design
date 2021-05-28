@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>결과 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
+</head>
+
+<body class="d-flex flex-column">
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="index.html"><img src="/assets/img/logo_ia.png" class="aside-logo" ondragstart="return false"></a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="aside-loggedin-user">
+                    <h6 class="tx-semibold mg-b-0">[42SEOUL] 빅데이터 분석</h6>
+                    <p class="tx-color-03 tx-12 btn-uppercase mg-b-0">강의 코드&nbsp;<span class="tx-color-03 tx-bold">42SEOUL</span></p>
+                </div>
+            </div><!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-label">학습 메뉴</li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지사항</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="flag"></i><span>프로젝트</span></a></li>
+                <li class="nav-item with-sub">
+                    <a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션평가</span></a>
+                    <ul>
+                        <li><a href="">내 미션 평가요청</a></li>
+                        <li><a href="">내 미션 평가결과</a></li>
+                        <li class="active"><a href="">내 동료 평가하기</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item active"><a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>결과</span></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+        <header class="navbar navbar-header">
+            <div class="navbar-right">
+                <div class="dropdown dropdown-profile">
+                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                        <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex" style="color: #001737;">
+                            <i data-feather="user" class="wd-16 ht-16"></i>
+                        </div>
+                    </a><!-- dropdown-link -->
+                    <div class="dropdown-menu dropdown-menu-right tx-13">
+                        <div>
+                            <div class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
+                                <i data-feather="user" class="wd-32 ht-32"></i>
+                            </div>
+                            <h6 class="profile-tx tx-lg-16">한기헌</h6>
+                            <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                        <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
+                        <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
+                        <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </div><!-- navbar-right -->
+        </header><!-- content-header -->
+
+        <div class="content-body" style="background-color: #f4f5f8;">
+            <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+                <div class="row row-xs d-flex justify-content-between mg-b-20">
+                    <div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                <li class="breadcrumb-item"><a href="#">[42SEOUL] 빅데이터 분석</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">결과</li>
+                            </ol>
+                        </nav>
+                        <h2 class="df-title">Mission 1</h2>
+                        <p class="df-lead">Mission 1을 수행하고 다른 사람들로 부터 받은 평가를 확인합니다.</p>
+                    </div>
+                    <div class="d-d-none d-md-block">
+                        <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
+                    </div>
+                </div>
+                <div class="row row-xs">
+                    <div class="col-12">
+                        
+                        <div class="card mg-t-10">
+                            <div class="card-body pd-25">
+                                <div class="row row-xs d-flex justify-content-between">
+                                    <div class="col-8 col-sm-3 col-lg-3">
+                                        <select class="custom-select" aria-label="" disabled="">
+                                            <option value="1">MISSION 01 : 미터기 텍스트</option>
+                                            <option value="2">MISSION 02</option>
+                                            <option value="3">MISSION 03</option>
+                                            <option value="4">MISSION 04</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 col-sm-3 col-lg-2">
+                                        <a href="" class="btn btn-block btn-outline-primary tx-14">확인</a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered tx-14 mg-b-0">
+                                        <tbody class="tx-center tx-14 " style="border-bottom: 1px solid #e5e9f2;">
+                                            <tr class="ht-50">
+                                                <td class="wd-20p table-light tx-light">No.</td>
+                                                <td class="wd-30p">MISSION 01</td>
+                                                <td class="wd-20p table-light tx-light">주제</td>
+                                                <td class="wd-30p">미터기 텍스트</td>
+                                            </tr>
+                                            <tr class="ht-50">
+                                                <td class="wd-20p table-light tx-light">평가한 동료</td>
+                                                <td class="wd-30p">이준석</td>
+                                                <td class="wd-20p table-light tx-light">평가 시간</td>
+                                                <td class="wd-30p">2021-02-25 15:32</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-responsive mg-t-16">
+                                    <table class="table table-bordered tx-14 mg-b-0">
+                                        <tbody class="tx-center tx-14 " style="border-bottom: 1px solid #e5e9f2;">
+                                            <tr class="ht-50">
+                                                <td class="wd-20p table-light tx-light">첨부 파일</td>
+                                                <td colspan="3">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-file tx-color-03 d-none d-sm-block">
+                                                                <path
+                                                                    d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z">
+                                                                </path>
+                                                                <polyline points="13 2 13 9 20 9"></polyline>
+                                                            </svg>
+                                                            <div class="file-body tx-left mg-l-10">
+                                                                <p class="file-name">Medical Certificate.pdf</p>
+                                                                <p class="file-size"><span>10.45KB</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <a href="#" class="btn btn-sm btn-white btn-download"
+                                                                onclick=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                                    width="24" height="24" viewBox="0 0 24 24"
+                                                                    fill="none" stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    class="feather feather-download mg-r-2">
+                                                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+                                                                    </path>
+                                                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                                                </svg> 다운로드</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="ht-50">
+                                                <td class="wd-20p table-light tx-light">미션에 대한 설명</td>
+                                                <td class="tx-left" colspan="3">
+                                                    <p class="mg-b-0">
+                                                        숫자가 표시되는 계량기의 숫자 표시부의 사진을 확보하고 다음 과정의 프로그램을 작성한다.
+                                                        1. 회전 / 2. 광각뷰 보정 / 3. Crop / 4. Gray Scale로 변환
+                                                        숫자가 표시되는 계량기의 숫자 표시부의 사진을 확보하고 다음 과정의 프로그램을 작성한다.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mg-t-10">
+                            <div class="card-body pd-25">
+                                <ul class="nav nav-line nav-justified tx-sm-16 tx-11 tx-bold" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link lh-3 active" id="m1-tab" data-toggle="tab" href="#m1" role="tab" aria-controls="mission1" aria-selected="true">이정인</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link lh-3" id="m2-tab" data-toggle="tab" href="#m2" role="tab" aria-controls="mission2" aria-selected="false">이진주</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link lh-3" id="m3-tab" data-toggle="tab" href="#m3" role="tab" aria-controls="mission3" aria-selected="false">최귀상</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link lh-3" id="m4-tab" data-toggle="tab" href="#m4" role="tab" aria-controls="mission4" aria-selected="false">멘토 평가</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="m1" role="tabpanel" aria-labelledby="m1-tab">
+                                    <div class="table-responsive">
+                                        
+                                        
+                                    </div>
+                                    
+                                    <div class="accordion mg-t-10" id="accordionExample">
+                                        <div class="card">
+                                            <div class="card-header" id="headingOne">
+                                                <a class="btn collapse-btn" type="button" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="false"
+                                                    aria-controls="collapseOne">
+                                                    <h6 class="tx-bold mb-0"><span
+                                                            class="tx-bold badge badge-ch">01</span>&emsp;1차 평가 결과 보기
+                                                    </h6>
+                                                    <i class="tx-primary rotate-icon" data-feather="chevron-down"
+                                                        width="20" height="20"></i>
+                                                </a>
+                                            </div>
+                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body pd-25">
+                                                    <div class="d-flex align-items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="feather feather-grid tx-color-03 wd-15 ht-15">
+                                                            <rect x="3" y="3" width="7" height="7"></rect>
+                                                            <rect x="14" y="3" width="7" height="7"></rect>
+                                                            <rect x="14" y="14" width="7" height="7"></rect>
+                                                            <rect x="3" y="14" width="7" height="7"></rect>
+                                                        </svg>
+                                                        <p class="tx-bold tx-14 mg-b-0 mg-l-10">평가</p>
+                                                    </div>
+                                                    <hr>
+
+
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">1. 모듈에 대한 가독성은 어떠한가요?</p>
+                                                        <div class="d-sm-flex mg-t-16">
+                                                            <div>
+                                                                <label class="">
+                                                                    <input type="radio" class="check-custom" id="1_p0"
+                                                                        name="p1" value="0" disabled="">
+                                                                    <span class="check-toggle" for="1_p0"></span> 3.
+                                                                    우수하다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="1_p1"
+                                                                        name="p1" value="1" disabled="" checked="">
+                                                                    <span class="check-toggle" for="1_p1"></span> 2.
+                                                                    미흡하다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="1_p2"
+                                                                        name="p1" value="2" disabled="">
+                                                                    <span class="check-toggle" for="1_p2"></span> 1. 평가를
+                                                                    유보한다
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">2. 코드의 비주얼적 가독성은 어떠한가요?</p>
+                                                        <div class="d-sm-flex mg-t-16">
+                                                            <div>
+                                                                <label class="">
+                                                                    <input type="radio" class="check-custom" id="2_p0"
+                                                                        name="p2" value="0" disabled="">
+                                                                    <span class="check-toggle" for="2_p0"></span> 3.
+                                                                    우수하다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="2_p1"
+                                                                        name="p2" value="1" disabled="">
+                                                                    <span class="check-toggle" for="2_p1"></span> 2.
+                                                                    미흡하다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="2_p2"
+                                                                        name="p2" value="2" disabled="" checked="">
+                                                                    <span class="check-toggle" for="2_p2"></span> 1. 평가를
+                                                                    유보한다
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">3. 코드의 시멘틱적 가독성은 어떠한가요?</p>
+                                                        <div class="d-sm-flex mg-t-16">
+                                                            <div>
+                                                                <label class="">
+                                                                    <input type="radio" class="check-custom" id="3_p0"
+                                                                        name="p3" value="0" disabled="">
+                                                                    <span class="check-toggle" for="3_p0"></span> 3.
+                                                                    우수하다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="3_p1"
+                                                                        name="p3" value="1" disabled="">
+                                                                    <span class="check-toggle" for="3_p1"></span> 2.
+                                                                    미흡하다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="3_p2"
+                                                                        name="p3" value="2" disabled="" checked="">
+                                                                    <span class="check-toggle" for="3_p2"></span> 1. 평가를
+                                                                    유보한다
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">4. 피평가자가 해결한 방법보다 더 좋은 방법이
+                                                            있나요?</p>
+                                                        <div class="d-sm-flex mg-t-16">
+                                                            <div>
+                                                                <label class="">
+                                                                    <input type="radio" class="check-custom" id="4_p0"
+                                                                        name="p4" value="0" disabled="">
+                                                                    <span class="check-toggle" for="4_p0"></span> 3.
+                                                                    피평가자가 사용한 방법이 최선인 것 같다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="4_p1"
+                                                                        name="p4" value="1" disabled="" checked="">
+                                                                    <span class="check-toggle" for="4_p1"></span> 2. 더
+                                                                    좋은 방법이 있는 것 같다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="4_p2"
+                                                                        name="p4" value="2" disabled="">
+                                                                    <span class="check-toggle" for="4_p2"></span> 1. 평가를
+                                                                    유보한다
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">5. 더 좋은 방법이 있다면 추천해주세요</p>
+                                                        <textarea class="form-control mg-t-8" rows="3"
+                                                            placeholder="내용을 입력하세요." readonly="">내용을 입력하세요</textarea>
+                                                    </div>
+                                                    <hr>
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">6. 미션의 종합적 완성도는 어떠한가요?</p>
+                                                        <div class="d-sm-flex mg-t-16">
+                                                            <div>
+                                                                <label class="">
+                                                                    <input type="radio" class="check-custom" id="6_p0"
+                                                                        name="p6" value="0" disabled="">
+                                                                    <span class="check-toggle" for="6_p0"></span> 4.
+                                                                    완성도가 높다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="6_p1"
+                                                                        name="p6" value="1" disabled="">
+                                                                    <span class="check-toggle" for="6_p1"></span> 3.
+                                                                    무난하다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="6_p2"
+                                                                        name="p6" value="2" disabled="">
+                                                                    <span class="check-toggle" for="6_p2"></span> 2.
+                                                                    미흡하다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="6_p3"
+                                                                        name="p6" value="3" disabled="" checked="">
+                                                                    <span class="check-toggle" for="6_p3"></span> 1. 평가를
+                                                                    유보한다
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">7. 피평가자와 함께 프로젝트를 수행하고 싶나요?
+                                                        </p>
+                                                        <div class="d-sm-flex mg-t-16">
+                                                            <div>
+                                                                <label class="">
+                                                                    <input type="radio" class="check-custom" id="7_p0"
+                                                                        name="p7" value="0" disabled="">
+                                                                    <span class="check-toggle" for="7_p0"></span> 3. 기회만
+                                                                    된다면 함께 하고 싶다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="7_p1"
+                                                                        name="p7" value="1" disabled="" checked="">
+                                                                    <span class="check-toggle" for="7_p1"></span> 2. 굳이
+                                                                    프로젝트를 함께 수행하고 싶지는 않다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="7_p2"
+                                                                        name="p7" value="2" disabled="">
+                                                                    <span class="check-toggle" for="7_p2"></span> 1. 잘
+                                                                    모르겠다
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">8. 미션을 수행하면서 제약사항은 잘 지켰나요?
+                                                        </p>
+                                                        <div class="d-sm-flex mg-t-16">
+                                                            <div>
+                                                                <label class="">
+                                                                    <input type="radio" class="check-custom" id="8_p0"
+                                                                        name="p8" value="0" disabled="" checked="">
+                                                                    <span class="check-toggle" for="8_p0"></span> 4. 모든
+                                                                    사항을 지켰습니다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="8_p1"
+                                                                        name="p8" value="1" disabled="">
+                                                                    <span class="check-toggle" for="8_p1"></span> 3.
+                                                                    대부분의 사항을 지켰습니다
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="8_p2"
+                                                                        name="p8" value="2" disabled="">
+                                                                    <span class="check-toggle" for="8_p2"></span> 2. 일부의
+                                                                    사항만 지켰습니다.
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom" id="8_p3"
+                                                                        name="p8" value="3" disabled="">
+                                                                    <span class="check-toggle" for="8_p3"></span> 1. 전혀
+                                                                    지키지 않았습니다.
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwo">
+                                                <a class="btn collapse-btn" type="button" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    <h6 class="tx-bold mb-0"><span
+                                                            class="tx-bold badge badge-ch">02</span>&emsp;2차 동료 평가 결과 보기
+                                                    </h6>
+                                                    <i class="tx-primary rotate-icon" data-feather="chevron-down"
+                                                        width="20" height="20"></i>
+                                                </a>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body pd-25">
+
+                                                    <div class="row row-xs d-flex justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <i data-feather="thumbs-up" class="tx-color-03"></i>
+                                                            <p class="tx-semibold tx-14 mg-b-0 mg-l-10">공통 평가</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <a href="" class="btn btn-block btn-white tx-14">임시저장</a>
+                                                            <a href=""
+                                                                class="btn btn-block btn-outline-primary tx-14 mg-l-10">완료하기</a>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">1. 평가에 대한 설명이 잘 이루어졌나요?</p>
+                                                        <div class="d-sm-flex mg-t-16">
+                                                            <div>
+                                                                <label>
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_4_1" name="m-eval-4">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_4_1"></span>&ensp;1점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_4_2" name="m-eval-4">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_4_2"></span>&ensp;2점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_4_3" name="m-eval-4">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_4_3"></span>&ensp;3점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_4_4" name="m-eval-4">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_4_4"></span>&ensp;4점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_4_5" name="m-eval-4">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_4_5"></span>&ensp;5점
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">2. 빠른 시간내에 평가가 진행되었나요?</p>
+                                                        <div class="d-sm-flex mg-t-16">
+                                                            <div>
+                                                                <label>
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_3_1" name="m-eval-3">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_3_1"></span>&ensp;1점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_3_2" name="m-eval-3">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_3_2"></span>&ensp;2점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_3_3" name="m-eval-3">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_3_3"></span>&ensp;3점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_3_4" name="m-eval-3">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_3_4"></span>&ensp;4점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_3_5" name="m-eval-3">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_3_5"></span>&ensp;5점
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">3. 평가자가 본인의 의도를 잘 파악하였나요?
+                                                        </p>
+                                                        <div class="d-sm-flex mg-t-16">
+                                                            <div>
+                                                                <label>
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_3_1" name="m-eval-3">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_3_1"></span>&ensp;1점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_3_2" name="m-eval-3">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_3_2"></span>&ensp;2점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_3_3" name="m-eval-3">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_3_3"></span>&ensp;3점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_3_4" name="m-eval-3">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_3_4"></span>&ensp;4점
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="mg-sm-l-40">
+                                                                    <input type="radio" class="check-custom"
+                                                                        id="m_eval_3_5" name="m-eval-3">
+                                                                    <span class="check-toggle"
+                                                                        for="m_eval_3_5"></span>&ensp;5점
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div>
+                                                        <p class="tx-semibold tx-14 mg-b-0">4. 총평</p>
+                                                        <textarea class="form-control mg-t-8" rows="3"
+                                                            placeholder="내용을 입력하세요."></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="m2" role="tabpanel" aria-labelledby="m2-tab">
+                                    <div class="mg-t-20 pd-20">
+                                        <p class="policy-tx tx-lg-16">제 1 조 목적</p>
+                                        <p class="policy-p tx-lg-14">
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="m3" role="tabpanel" aria-labelledby="m3-tab">
+                                    <div class="mg-t-20 pd-20">
+                                        <p class="policy-p tx-lg-14 mg-t-0">
+                                        ① 이 동의서는 주식회사 매직에코(이하 “회사”)가 운영하는 magicecole(이하 “매직에콜”, “서비스”)내 개인정보보호법 및 동 법령이 정하는 제30조에 의거 이용자의 초상권을 포함한 개인정보보호와 권익을 보호하고 행사(교육 및 강좌 등)을 원활하게 진행하기 위해 그 목적이 있습니다.</p>
+                                    </div><!-- row -->
+                                </div>
+                                <div class="tab-pane fade" id="m4" role="tabpanel" aria-labelledby="m4-tab">
+                                    <div class="mg-t-20 pd-20">
+                                        <p class="policy-tx tx-lg-16">제 1 조 목적</p>
+                                        <p class="policy-p tx-lg-14">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="/lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="/lib/peity/jquery.peity.min.js"></script>
+    <script src="/lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+    <script src="/assets/js/dashforge.aside.js"></script>
+    <script src="/assets/js/dashforge.sampledata.js"></script>
+    <script src="/assets/js/dashboard-two.js"></script>
+    <script src="/assets/js/dashboard-four.js"></script>
+
+    <script src="/lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="/lib/moment/min/moment.min.js"></script>
+    <script src="/lib/fullcalendar/fullcalendar.min.js"></script>
+    <script src="/lib/select2/js/select2.full.min.js"></script>
+
+    <script src="/assets/js/calendar-events.js"></script>
+    <script src="/assets/js/dashforge.calendar.js"></script>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['0', '10', '20', '30','40','50','60', '70', '80','90','100'],
+                datasets: [{
+                    type: 'line',
+                    label: '백분위(%)',
+                    data: [90, 60, 70, 40, 60, 70, 40, 90, 60, 70, 40, 60],
+                    pointRadius: 0,
+                    pointHoverRadius: 4,
+                    borderWidth: 1,
+                    borderColor: "#00B8A9",
+                    backgroundColor: "#00B8A9",
+                    fill: false,
+                }]
+            },
+            options: {
+                Responsive: true,
+                maintainAspectRatio: false,
+                legend : {
+                    position : "end"
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            fontColor: "rgba(0,0,0,0.5)",
+                            fontStyle: "bold",
+                            fontSize: 10,
+                            beginAtZero: true,
+                            maxTicksLimit: 5,
+                            padding: 10
+                        },
+                        gridLines: {
+                            drawTicks: false,
+                            display: false
+                        }
+                    }],
+                    xAxes: [{
+                        barPercentage: 0.5,
+                        categoryPercentage: 0.5,
+                        ticks: {
+                            fontColor: "rgba(0,0,0,0.5)",
+                            fontStyle: "bold",
+                            fontSize: 10,
+                            beginAtZero: true,
+                            padding: 10
+                        },
+                        scaleLabel: {
+                            fontColor: "rgba(0,0,0,0.5)",
+                            fontStyle: "bold",
+                            fontSize: 10,
+                            display: true,
+                            labelString: '점수'
+                        },
+                        gridLines: {
+                            drawTicks: false
+                        }
+                    }]
+                }
+            }
+        },);
+    </script>
+
+</body>
+</html>

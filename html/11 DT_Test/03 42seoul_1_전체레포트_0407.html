@@ -477,67 +477,7 @@
     <script src="/assets/js/dashforge.calendar.js"></script>
 
     <script src="/assets/js/radar_chart_1.js"></script>
-    <script src="/assets/js/stick_chart.js"></script>
-
-    <script>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['1일차', '2일차', '3일차', '4일차', '5일차', '6일차', '7일차'],
-                datasets: [{
-                    label: '출석률(%)',
-                    data: [90, 60, 70, 40, 60, 70, 40],
-                    pointRadius: 3,
-                    pointHoverRadius: 4,
-                    borderWidth: 1,
-                    borderColor: "#00B8A9",
-                    backgroundColor: "#00B8A9",
-                    fill: false,
-                    lineTension: 0
-                }]
-            },
-            options: {
-                Responsive: true,
-                maintainAspectRatio: false,
-                legend: {
-                    position: "end"
-                },
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            fontColor: "rgba(0,0,0,0.5)",
-                            fontStyle: "bold",
-                            fontSize: 10,
-                            beginAtZero: true,
-                            maxTicksLimit: 5,
-                            padding: 10
-                        },
-                        gridLines: {
-                            drawTicks: false,
-                            display: false
-                        }
-                    }],
-                    xAxes: [{
-                        barPercentage: 0.5,
-                        categoryPercentage: 0.5,
-                        ticks: {
-                            fontColor: "rgba(0,0,0,0.5)",
-                            fontStyle: "bold",
-                            fontSize: 10,
-                            beginAtZero: true,
-                            maxTicksLimit: 5,
-                            padding: 10
-                        },
-                        gridLines: {
-                            drawTicks: false
-                        }
-                    }]
-                }
-            }
-        });
-    </script>
-
+   
 </body>
 
 </html>
