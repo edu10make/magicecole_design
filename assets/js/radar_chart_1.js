@@ -5,7 +5,12 @@ window.chartColors = {
   green: 'rgb(75, 192, 192)',
   blue: 'rgb(54, 162, 235)',
   purple: 'rgb(153, 102, 255)',
-  grey: 'rgb(231,233,237)'
+  grey: 'rgb(231,233,237)',
+  t1_s:'rgb(255,102,102)',
+  t1_m: 'rgb(204,0,0)',
+  t2_s: 'rgb(102,153,255)',
+  t2_m: 'rgb(0,51,204)',
+
 };
 
 window.randomScalingFactor = function () {
@@ -21,7 +26,7 @@ var now = moment();
 var label1 = "1차 Test 평균";
 var label2 = "나의 1차 Test";
 var label3 = "2차 Test 평균";
-var label4 = "나의 1차 Test";
+var label4 = "나의 2차 Test";
 
 
 var color = Chart.helpers.color;
@@ -31,36 +36,37 @@ var config1 = {
     labels: [
       "Business", "Data", "Interface"
     ],
-    datasets: [{
-      label: label1,
-      backgroundColor: color(window.chartColors.red).alpha(0).rgbString(),
-      borderColor: window.chartColors.red,
-      pointBackgroundColor: window.chartColors.red,
-      data: [10, 9.6, 9.8],
-      notes: ["BTS rap-monster"]
-    }, {
+    datasets: [ {
       label: label2,
-      backgroundColor: color(window.chartColors.blue).alpha(0).rgbString(),
-      borderColor: window.chartColors.blue,
-      pointBackgroundColor: window.chartColors.blue,
-      data: [9, 9, 9],
+      backgroundColor: color(window.chartColors.t1_m).alpha(0).rgbString(),
+      borderColor: window.chartColors.t1_m,
+      pointBackgroundColor: window.chartColors.t1_m,
+      data: [4.25, 3.25, 4],
       notes: ["TWICE MoMo"]
     }, {
-      label: label3,
-      backgroundColor: color(window.chartColors.purple).alpha(0).rgbString(),
-      borderColor: window.chartColors.purple,
-      pointBackgroundColor: window.chartColors.purple,
-      data: [7.6, 8.6, 6],
+      label: label4,
+      backgroundColor: color(window.chartColors.t2_m).alpha(0).rgbString(),
+      borderColor: window.chartColors.t2_m,
+      pointBackgroundColor: window.chartColors.t2_m,
+      data: [6, 1.25, 3],
       notes: ["TWICE JiHyo"]
-    },
-  {
-    label: label4,
-    backgroundColor: color(window.chartColors.yellow).alpha(0).rgbString(),
-    borderColor: window.chartColors.yellow,
-    pointBackgroundColor: window.chartColors.yellow,
-    data: [1.2, 1.3, 1.4],
-    notes: ["TWICE JiHyo"]
-  }]
+    }, {
+      label: label1,
+      backgroundColor: color(window.chartColors.t1_s).alpha(0).rgbString(),
+      borderColor: window.chartColors.t1_s,
+      pointBackgroundColor: window.chartColors.t1_s,
+      data: [4.15, 3.72, 3.88],
+      notes: ["BTS rap-monster"],
+      borderWidth: 3,
+      pointRadius: 3
+    }, {
+      label: label3,
+      backgroundColor: color(window.chartColors.t2_s).alpha(0).rgbString(),
+      borderColor: window.chartColors.t2_s,
+      pointBackgroundColor: window.chartColors.t2_s,
+      data: [4.62, 3.78, 4.45],
+      notes: ["TWICE JiHyo"]
+    }]
   },
   options: {
     responsive: true,
@@ -73,8 +79,12 @@ var config1 = {
     },
     scale: {
       ticks: {
-        beginAtZero: true
-      }
+        beginAtZero: true,
+          // steps: 2,
+          // stepValue: 2,
+          max: 10
+      },
+      
     },
     tooltips: {
       enabled: false,

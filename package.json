@@ -1,0 +1,32 @@
+{
+  "name": "magicecole_design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@kurkle/color": "^0.1.9",
+    "chart.js": "^3.0.2",
+    "data-utils": "0.0.2",
+    "tui-grid": "^4.17.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "eqwe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edu10make/magicecole_design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edu10make/magicecole_design/issues"
+  },
+  "homepage": "https://github.com/edu10make/magicecole_design#readme",
+  "type": "module"
+
+}
