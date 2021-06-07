@@ -126,6 +126,11 @@
                                     <canvas id="stick_chart_2" width="952" height="130"
                                         style="display: block; height: 529px; width: 1058px;"
                                         class="chartjs-render-monitor"></canvas>
+                                    <div class="toggle">
+                                        <input id="toggle" type="checkbox" class="toggle-checkbox" />
+                                        <label for="toggle" class="toggle-label">&nbsp;</label>
+                                    </div>
+                                    <canvas id="chart" width="100%" height="100%"></canvas>
                                     
                                     <div class="table-responsive mg-t-30 col-sm-12 ">
                                         <table class="table tx-nowrap tx-14 mg-b-0">
@@ -427,7 +432,10 @@
     <script src="./print.js"></script>
     <script type="module" src="/assets/js/stick_chart.js"></script>
     <script type="module" src="/assets/js/stick_chart_.js"></script>
-
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script type="module" src="/assets/js/select_chart.js"></script>
 
 
 </body>
