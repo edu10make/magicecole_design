@@ -1,35 +1,110 @@
+// import Utils from "util";
+// var Utils = require('util');
+// import Utils from "./utils.js";
+// console.log(Utils.months({
+//     count: 7
+// }))
+
 var ctx = document.getElementById("stick_chart");
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ["Node.js", "Front-end : Web", "Python", "Ruby", "Back-end : Window", "Back-end : Ubuntu", "Machine-Learning", "C++", "Front-end : Android", "Front-end : iOS", "C#"],
-        datasets: [{
-            axis: 'y',
-            label: 'My First Dataset',
-            data: [0.8,0.7,0.7,0.5,0.47,0.35,0.25,0.1,0,0,0],
-            fill: false,
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 205, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(201, 203, 207, 0.2)'
-            ],
-            borderColor: [
-                'rgb(255, 99, 132)',
-                'rgb(255, 159, 64)',
-                'rgb(255, 205, 86)',
-                'rgb(75, 192, 192)',
-                'rgb(54, 162, 235)',
-                'rgb(153, 102, 255)',
-                'rgb(201, 203, 207)'
-            ],
-            borderWidth: 1
-        }]
+const DATA_COUNT = 7;
+const NUMBER_CFG = {
+    count: DATA_COUNT,
+    min: -100,
+    max: 100
+};
+
+const labels = ["Biz","Data","Interface"];
+const data = {
+    labels: labels,
+    datasets: [{
+        axis: 'y',
+        label: '1차 시험',
+        data: [-20,-42,-12],
+        fill: false,
+        backgroundColor: 
+            'rgba(204, 0, 0, 0.2)',
+        
+        borderColor: 
+            'rgb(204, 0, 0)'
+        ,
+        borderWidth: 1
     },
+{
+    axis: 'y',
+    label: '2차 시험',
+    data: [35,-15,12],
+    fill: false,
+    backgroundColor: 
+   
+        'rgba(0, 51, 204, 0.2)'
+    ,
+    borderColor: 
+
+        'rgb(0, 51, 204)'
+    ,
+    borderWidth: 1
+}]
+};
+
+// const config = {
+//     type: 'horizontalBar',
+//     responsive: true,
+//     data,
+//     options: {
+//         indexAxis: 'y',
+//         plugins: {
+//             legend: {
+//                 position: 'right',
+//             },
+//             title: {
+//                 display: true,
+//                 text: 'Chart.js Horizontal Bar Chart'
+//             }
+//         }
+//     }
+// };
+
+const config = {
+    type: 'horizontalBar',
+    data: data,
     options: {
         indexAxis: 'y',
-    }
-});
+        // Elements options apply to all of the options unless overridden in a dataset
+        // In this case, we are setting the border of each horizontal bar to be 2px wide
+        elements: {
+            bar: {
+                borderWidth: 2,
+            }
+        },
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'right',
+            },
+            title: {
+                display: true,
+                text: 'Chart.js Horizontal Bar Chart'
+            }
+        },
+        scales:{
+
+        xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: '평균(%)'
+                },
+                ticks: {
+                    beginAtZero: true,
+                    steps: 10,
+                    stepValue: 5,
+                    min: -50,
+                    max: 50
+                }
+            }],
+           
+        }
+    },
+};
+
+var myChart = new Chart(ctx, config);

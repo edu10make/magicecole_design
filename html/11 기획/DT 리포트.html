@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <title>전체 레포트 : magicecole</title>
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="/assets/css/dashforge.css">
+    <link rel="stylesheet" href="/assets/css/dashforge.dashboard.css">
+    <link rel="stylesheet" href="/assets/css/toggle.css">
+
+</head>
+
+<body class="d-flex flex-column">
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="index.html"><img src="/assets/img/logo_ia.png" class="aside-logo" ondragstart="return false"></a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="aside-loggedin-user">
+                    <h6 class="tx-semibold mg-b-0">[42SEOUL] 의료 데이터</h6>
+                    <p class="tx-color-03 tx-12 btn-uppercase mg-b-0">강의 코드&nbsp;<span
+                            class="tx-color-03 tx-bold">42SEOUL</span></p>
+                </div>
+            </div><!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-label">멘토 메뉴</li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="layout"></i><span>대시보드</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="bell"></i><span>공지사항</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="flag"></i><span>프로젝트</span></a></li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="thumbs-up"></i> <span>미션 관리</span></a>
+                </li>
+                <li class="nav-item with-sub show">
+                    <a href="" class="nav-link"><i data-feather="bar-chart-2"></i><span>레포트</span></a>
+                    <ul>
+                        <li class="active"><a href="">전체 레포트</a></li>
+                        <li><a href="">개인별 레포트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content ht-100v pd-0">
+        <header class="navbar navbar-header">
+            <div class="navbar-right">
+                <div class="dropdown dropdown-profile">
+                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                        <div class="wd-30 ht-30 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex"
+                            style="color: #001737;">
+                            <i data-feather="user" class="wd-16 ht-16"></i>
+                        </div>
+                    </a><!-- dropdown-link -->
+                    <div class="dropdown-menu dropdown-menu-right tx-13">
+                        <div>
+                            <div
+                                class="wd-50 ht-50 bd bd-2 rounded-circle align-items-center justify-content-center d-none d-sm-flex mg-b-10">
+                                <i data-feather="user" class="wd-32 ht-32"></i>
+                            </div>
+                            <h6 class="profile-tx tx-lg-16">한기헌</h6>
+                            <p class="profile-mail tx-lg-14">gksrlgsjz@magice.co</p>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                        <a href="" class="dropdown-item"><i data-feather="user"></i> 회원 정보</a>
+                        <a href="" class="dropdown-item"><i data-feather="layout"></i> 강의 목록</a>
+                        <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>로그아웃</a>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </div><!-- navbar-right -->
+        </header><!-- content-header -->
+
+        <div class="content-body" style="background-color: #f4f5f8;">
+            <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+
+                <div class="row row-xs d-flex justify-content-between mg-b-20">
+                    <div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                                <li class="breadcrumb-item"><a href="#">AI 리터러시 교육과정(코드번호 : A0503)</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">DT 진단</li>
+                            </ol>
+                        </nav>
+                        <h2 class="df-title">DT 진단</h2>
+                        <p class="df-lead">나의 DT 수준을 평가합니다.</p>
+                    </div>
+                    <div class="d-d-none d-md-block">
+                        <span class="d-none d-md-block tx-color-03 btn-uppercase">최근 로그인 2021-00-00 00:00</span>
+                    </div>
+                </div>
+                <div class="row row-xs">
+                    <div class="col-12 col-sm-12">
+                        <div class="card mg-t-10">
+                            <div class="card-body pd-25">
+                                <h4 class="h3 tx-xl-26 tx-lg-30">📝DT Test란?</h4>
+                                <p>인공지능(AI), 빅데이터, 클라우드, 사물 인터넷(IoT) 등 디지털 정보통신기술(ICT)을 전반에 대한 기본 지식과 업무 활용
+                                    능력 등을 알아보는 기본 역량 평가입니다.</p>
+                                <p>본 진단은 개인의 Dtigital Transforming(이하 DT) 실행에 대한 인식 및 Digital Literacy를 확인합니다. 본 진단의 목적은
+                                    피평가자가 진행 중인 기술 혁명에 얼마나 잘 대응할 수 있는지 준비 수준을 파악하는 것을 목적으로 합니다.</p>
+                                <p>본 진단 결과를 바탕으로 성공적인 DT 추진을 위해서 방향을 설정하고 역량을 개발할 부분을 확인하는 용도로 활용하시길 바랍니다.
+                                </p>
+
+                                <p class="mg-0 tx-bold" style="color:red;">DT 기술 역량 진단의 결과는 기술 역량의 수준이 높고 낮음을 나타내지 않습니다.
+                                    따라서,
+                                    Digital 기술에 대한 Literacy를 확인하는 용도로만 활용해주시기 바랍니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="card mg-t-10">
+                            <div class="card-body pd-25">
+                                <p>또한, 진단 결과 3대 DT 기술 역량 중</p>
+                                <p style="display: inline; color:blue;" class=" tx-bold">Data 역량<p
+                                        style="display: inline">
+                                        이 가장 높고,</p>
+                                </p>
+                                <p style="display: inline; color:red;" class="mg-0 tx-bold">Interface 역량
+                                    <p class="mg-0" style="display: inline">이 상대적으로 낮은 것으로 응답하였습니다.</p>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="card mg-t-10">
+                            <div class="card-body pd-25">
+                                <h6 class="h3 tx-xl-20 tx-lg-20">🥇석차<span class="tx-primary"></span></h6>
+                                <div>
+                                    <canvas id="stick_chart_1" width="952" height="250"
+                                        style="display: block; height: 529px; width: 1058px;"
+                                        class="chartjs-render-monitor"></canvas>
+                                    <canvas id="stick_chart_2" width="952" height="130"
+                                        style="display: block; height: 529px; width: 1058px;"
+                                        class="chartjs-render-monitor"></canvas>
+
+                                    <!-- <canvas id="chart" width="100%" height="100%"></canvas> -->
+                                    <div class="table-responsive mg-t-30 col-sm-12 ">
+                                        <table class="table tx-nowrap tx-14 mg-b-0">
+                                            <thead class="tx-10 tx-medium tx-center tx-color-3">
+                                                <tr>
+                                                    <th class="wd-10p"></th>
+                                                    <th class="wd-10p tx-18">Biz</th>
+                                                    <th class="wd-10p tx-18">Data</th>
+                                                    <th class="wd-10p tx-18">Interface</th>
+                                                    <th class="wd-10p tx-18">총합</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="tx-center tx-14" style="border-bottom: 1px solid #e5e9f2;">
+                                                <tr>
+                                                    <td><span class="tx-bold tx-primary tx-15">1차 DT
+                                                            Test</span></br><span class=" tx-primary tx-12">내 등수
+                                                            / 전체 응답자</span></td>
+                                                    <td>255 / 300</td>
+                                                    <td>270 / 300</td>
+                                                    <td>210 / 300</td>
+                                                    <td>260 / 300</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="tx-bold tx-primary tx-15">2차 DT
+                                                            Test</span></br><span class=" tx-primary tx-12">내 등수
+                                                            / 전체 응답자</span></td>
+                                                    <td>75 / 250</td>
+                                                    <td>180 / 250</td>
+                                                    <td>100 / 250</td>
+                                                    <td>130 / 250</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card mg-t-10">
+                            <div class="card-body pd-25">
+                                <h6 class="h3 tx-xl-20 tx-lg-20">📈원점수<span class="tx-primary"></span></h6>
+
+                                <div>
+                                    <div class="row justify-content-center">
+                                        <!-- <div class="form-check mr-5">
+                                            <input class="form-check-input " id="toggle1" checked type="checkbox" />
+                                            <label for="toggle1" class="form-check-label">나의 1차 점수</label>
+                                        </div> -->
+                                        <label class="toggle" for="toggle1">
+                                            <input type="checkbox" checked class="toggle__input" id="toggle1" />
+                                            <span class="toggle-track">
+                                                <span class="toggle-indicator">
+                                                    <!-- 	This check mark is optional	 -->
+                                                    <span class="checkMark">
+
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            나의 1차 점수
+                                        </label>
+                                        <label class="toggle" for="toggle2">
+                                            <input type="checkbox" checked class="toggle__input" id="toggle2" />
+                                            <span class="toggle-track">
+                                                <span class="toggle-indicator">
+                                                    <!-- 	This check mark is optional	 -->
+                                                    <span class="checkMark">
+
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            나의 2차 점수
+                                        </label>
+                                        <label class="toggle" for="toggle3">
+                                            <input type="checkbox" checked class="toggle__input" id="toggle3" />
+                                            <span class="toggle-track">
+                                                <span class="toggle-indicator">
+                                                    <!-- 	This check mark is optional	 -->
+                                                    <span class="checkMark">
+
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            평균 1차 점수
+                                        </label>
+                                        <label class="toggle" for="toggle4">
+                                            <input type="checkbox" checked class="toggle__input" id="toggle4" />
+                                            <span class="toggle-track">
+                                                <span class="toggle-indicator">
+                                                    <!-- 	This check mark is optional	 -->
+                                                    <span class="checkMark">
+
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            평균 2차 점수
+                                        </label>
+
+                                    </div>
+
+
+                                    <canvas id="radar_chart1" width="1200" height="600"
+                                        style="display: block; position: relative;"
+                                        class="chartjs-render-monitor"></canvas>
+                                    <div class="table-responsive col-sm-12 ">
+                                        <table class="table tx-nowrap tx-14 mg-b-0">
+                                            <thead class="tx-10 tx-medium tx-center tx-color-3">
+                                                <tr>
+                                                    <th class="wd-18p tx-18"></th>
+                                                    <th class="wd-18p tx-18">Biz</th>
+                                                    <th class="wd-18p tx-18">Data</th>
+                                                    <th class="wd-18p tx-18">Interface</th>
+                                                    <th class="wd-18p tx-18">종합</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody class="tx-center tx-14" style="border-bottom: 1px solid #e5e9f2;">
+                                                <tr>
+                                                    <td><span class="tx-bold tx-primary tx-15">1차 DT
+                                                            Test</span></br><span class=" tx-primary tx-12">내 점수
+                                                            / 응답자 평균</span></td>
+                                                    <td>4.25 / 4.15</td>
+                                                    <td>3.25 / 3.72</td>
+                                                    <td>4 / 3.88</td>
+                                                    <td>11.49 / 11.73</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="tx-bold tx-primary tx-15">2차 DT
+                                                            Test</span></br><span class=" tx-primary tx-12">내 점수
+                                                            / 응답자 평균</span></td>
+                                                    <td>6 / 4.62</td>
+                                                    <td>1.25 / 3.78</td>
+                                                    <td>3 / 4.45</td>
+                                                    <td>11.23 / 12.86</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mg-t-10">
+                            <div class="card-body align-items-center pd-25">
+                                <h6 class="h3 tx-xl-20 tx-lg-20">📌항목별 세부 점수<span class="tx-primary"></span></h6>
+                                <ul class="nav nav-line nav-justified tx-sm-12 tx-11 tx-bold" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link lh-4 active tx-18" id="m1-tab" data-toggle="tab" href="#m1"
+                                            role="tab" aria-selected="true">Biz</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link lh-4 tx-18" id="m2-tab" data-toggle="tab" href="#m2"
+                                            role="tab" aria-selected="false">Data</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link lh-4 tx-18" id="m3-tab" data-toggle="tab" href="#m3"
+                                            role="tab" aria-selected="false">Interface</a>
+                                    </li>
+
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="m1" role="tabpanel"
+                                        aria-labelledby="m1-tab">
+                                        <div class="mg-t-30">
+                                            <div class="row mg-b-15">
+                                                <div class="col">
+                                                    <h6 class="tx-18 mg-b-5 text-center">Biz</h6>
+                                                    <p class="tx-color-03 tx-14 mg-b-10 text-center">
+                                                        점수&nbsp;<span class="tx-semibold">4.25</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-10">
+                                                    <div class="card ht-50 ">
+                                                        <p class="tx-color-03 tx-14 mg-b-0 pd-lg-x-10 pd-t-5">
+                                                            IT 기술을 활용한 비지니스 영역의 서비스 종류 및 특징, 용어에 대해 얼마나 이해하고 있는가?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table tx-nowrap tx-14 mg-b-0">
+                                                    <thead class="tx-10 tx-medium tx-center tx-color-03">
+                                                        <tr>
+                                                            <th class="wd-10p tx-18">난이도</th>
+                                                            <th class="wd-10p tx-18">리터러시</th>
+                                                            <th class="wd-10p tx-18">기획 역량</th>
+                                                            <th class="wd-10p tx-18">개발 역량</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="tx-center tx-14"
+                                                        style="border-bottom: 1px solid #e5e9f2;">
+                                                        <tr>
+                                                            <td><span class="tx-bold tx-primary tx-15">상</span>
+                                                            </td>
+                                                            <td>0/2</td>
+                                                            <td>1/3</td>
+                                                            <td>1/2</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="tx-bold tx-primary tx-15">중</span></td>
+                                                            <td>1.25/2</td>
+                                                            <td>3/3</td>
+                                                            <td>1/1</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="tx-bold tx-primary tx-15">하</span>
+                                                            </td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="m2" role="tabpanel">
+                                        <div class="mg-t-30">
+                                            <div class="row mg-b-15">
+                                                <div class="col">
+                                                    <h6 class="dash-mge mg-b-5 text-center">Data</h6>
+                                                    <p class="tx-color-03 tx-14 mg-b-10 text-center">
+                                                        점수&nbsp;<span class="tx-semibold">3.25</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-10">
+                                                    <div class="card ht-50 ">
+                                                        <p class="tx-color-03 tx-14 mg-b-0 pd-lg-x-10 pd-t-5">
+                                                            Data를 기반으로 하는 Cloud, Bigdata, AI, 블록체인에 관련된 용어 및 상용되고 있는
+                                                            서비스를 얼마나 이해하고 있는가?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table tx-nowrap tx-14 mg-b-0">
+                                                    <thead class="tx-10 tx-medium tx-center tx-color-03">
+                                                        <tr>
+                                                            <th class="wd-10p tx-18">난이도</th>
+                                                            <th class="wd-10p tx-18">리터러시</th>
+                                                            <th class="wd-10p tx-18">기획 역량</th>
+                                                            <th class="wd-10p tx-18">개발 역량</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="tx-center tx-14"
+                                                        style="border-bottom: 1px solid #e5e9f2;">
+                                                        <tr>
+                                                            <td><span class="tx-bold tx-primary tx-15">상</span>
+                                                            </td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="tx-bold tx-primary tx-15">중</span></td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="tx-bold tx-primary tx-15">하</span>
+                                                            </td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="m3" role="tabpanel">
+                                        <div class="mg-t-30">
+                                            <div class="row mg-b-15">
+                                                <div class="col">
+                                                    <h6 class="dash-mge mg-b-5 text-center">Interface</h6>
+                                                    <p class="tx-color-03 tx-14 mg-b-10 text-center">
+                                                        점수&nbsp;<span class="tx-semibold">4</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-10">
+                                                    <div class="card ht-50 ">
+                                                        <p class="tx-color-03 tx-14 mg-b-0 pd-lg-x-10 pd-t-5">
+                                                            고객과의 접점인 Web, Mobile, IoT에 관한 용어 및 기술에 대해 얼마나 이해하고 있는가?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table tx-nowrap tx-14 mg-b-0">
+                                                    <thead class="tx-10 tx-medium tx-center tx-color-03">
+                                                        <tr>
+                                                            <th class="wd-10p tx-18">난이도</th>
+                                                            <th class="wd-10p tx-18">리터러시</th>
+                                                            <th class="wd-10p tx-18">기획 역량</th>
+                                                            <th class="wd-10p tx-18">개발 역량</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="tx-center tx-14"
+                                                        style="border-bottom: 1px solid #e5e9f2;">
+                                                        <tr>
+                                                            <td><span class="tx-bold tx-primary tx-15">상</span></td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="tx-bold tx-primary tx-15">중</span></td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="tx-bold tx-primary tx-15">하</span></td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                            <td>1/3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/feather-icons/feather.min.js"></script>
+    <script src="/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.stack.js"></script>
+    <script src="/lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="/lib/flot.curvedlines/curvedLines.js"></script>
+    <script src="/lib/peity/jquery.peity.min.js"></script>
+    <script src="/lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="/assets/js/dashforge.js"></script>
+    <script src="/lib/moment/min/moment.min.js"></script>
+
+    <script src="/assets/js/radar_chart_1.js"></script>
+    <script src="./print.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="/assets/js/dashforge.js"></script>
+    <script src="/assets/js/dashforge.aside.js"></script>
+    <script src="/assets/js/dashforge.sampledata.js"></script>
+
+
+    <script type="module" src="/assets/js/stick_chart.js"></script>
+    <script type="module" src="/assets/js/stick_chart_.js"></script>
+    <!-- <script type="module" src="/assets/js/select_chart.js"></script> -->
+
+
+
+
+</body>
+
+</html>
